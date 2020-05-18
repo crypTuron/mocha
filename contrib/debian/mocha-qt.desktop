@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=MOCHA Core
+Comment=MOCHA P2P Cryptocurrency
+Comment[fr]=MOCHA, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=MOCHA, eşten eşe kriptografik sanal para birimi
+Exec=mocha-qt %u
+Terminal=false
+Type=Application
+Icon=mocha128
+MimeType=x-scheme-handler/mocha;
+Categories=Office;Finance;
+StartupWMClass=Pivx-qt

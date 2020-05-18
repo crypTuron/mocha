@@ -1,0 +1,81 @@
+policy_module(mocha, 1.100.1)
+
+########################################
+#
+# Declarations
+#
+
+type mocha_t;
+type mocha_exec_t;
+init_daemon_domain(mocha_t, mocha_exec_t)
+
+permissive mocha_t;
+
+type mocha_initrc_exec_t;
+init_script_file(mocha_initrc_exec_t)
+
+type mocha_conf_t;
+files_type(mocha_conf_t)
+
+type mocha_var_lib_t;
+files_type(mocha_var_lib_t)
+
+type mocha_var_run_t;
+files_type(mocha_var_run_t)
+
+type mocha_port_t;
+corenet_port(mocha_port_t)
+
+########################################
+#
+# mocha local policy
+#
+allow mocha_t self:process { fork };
+
+allow mocha_t self:fifo_file rw_fifo_file_perms;
+allow mocha_t self:unix_stream_socket create_stream_socket_perms;
+
+manage_dirs_pattern(mocha_t, mocha_conf_t, mocha_conf_t)
+manage_files_pattern(mocha_t, mocha_conf_t, mocha_conf_t)
+
+manage_dirs_pattern(mocha_t, mocha_var_lib_t, mocha_var_lib_t)
+manage_files_pattern(mocha_t, mocha_var_lib_t, mocha_var_lib_t)
+files_var_lib_filetrans(mocha_t, mocha_var_lib_t, { dir file })
+
+manage_dirs_pattern(mocha_t, mocha_var_run_t, mocha_var_run_t)
+manage_files_pattern(mocha_t, mocha_var_run_t, mocha_var_run_t)
+
+sysnet_dns_name_resolve(mocha_t)
+corenet_all_recvfrom_unlabeled(mocha_t)
+
+allow mocha_t self:tcp_socket create_stream_socket_perms;
+corenet_tcp_sendrecv_generic_if(mocha_t)
+corenet_tcp_sendrecv_generic_node(mocha_t)
+corenet_tcp_sendrecv_all_ports(mocha_t)
+corenet_tcp_bind_generic_node(mocha_t)
+
+gen_require(`
+    type mocha_port_t;
+')
+allow mocha_t mocha_port_t:tcp_socket name_bind;
+
+gen_require(`
+    type mocha_port_t;
+')
+allow mocha_t mocha_port_t:tcp_socket name_connect;
+
+domain_use_interactive_fds(mocha_t)
+
+files_read_etc_files(mocha_t)
+
+miscfiles_read_localization(mocha_t)
+
+sysnet_dns_name_resolve(mocha_t)
+
+allow mocha_t mocha_exec_t:file execute_no_trans;
+allow mocha_t self:process setsched;
+corecmd_exec_ls(mocha_t)
+corenet_tcp_connect_http_port(mocha_t)
+dev_read_urand(mocha_t)
+fs_getattr_xattr_fs(mocha_t)
+kernel_read_system_state(mocha_t)
