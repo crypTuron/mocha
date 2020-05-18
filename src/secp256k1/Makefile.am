@@ -76,6 +76,11 @@ libsecp256k1_la_SOURCES = src/secp256k1.c
 libsecp256k1_la_CPPFLAGS = -DSECP256K1_BUILD -I$(top_srcdir)/include -I$(top_srcdir)/src $(SECP_INCLUDES)
 libsecp256k1_la_LIBADD = $(JNI_LIB) $(SECP_LIBS) $(COMMON_LIB)
 
+CPPFLAGS_FOR_BUILD =
+CPPFLAGS_FOR_BUILD +=-I$(top_srcdir)
+CFLAGS_FOR_BUILD =
+CFLAGS_FOR_BUILD += -Wall -Wextra -Wno-unused-function
+
 libsecp256k1_jni_la_SOURCES  = src/java/org_bitcoin_NativeSecp256k1.c src/java/org_bitcoin_Secp256k1Context.c
 libsecp256k1_jni_la_CPPFLAGS = -DSECP256K1_BUILD $(JNI_INCLUDES)
 
