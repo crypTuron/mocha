@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints = 
     boost::assign::map_list_of
-    (0, uint256("0000018222cd5973ba1333dfa24ab54ab7b6470e2744c62085758042d8a97639"));
+    (0, uint256("0x0000018222cd5973ba1333dfa24ab54ab7b6470e2744c62085758042d8a97639"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
