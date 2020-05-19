@@ -324,7 +324,7 @@ public:
         nMasternodeCountDrift = 4;
         nMasternodeCollateral = 1 * COIN;
         nModifierUpdateBlock = INT_MAX; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 1000000000000000 * COIN;
+        nMaxMoneyOut = 100000 * COIN;
         nZerocoinStartHeight = INT_MAX;
         nZerocoinStartTime = INT_MAX;
         nBlockEnforceSerialRange = INT_MAX; //Enforce serial range starting this block
