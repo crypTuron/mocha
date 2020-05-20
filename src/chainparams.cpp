@@ -354,8 +354,8 @@ public:
         nSupplyBeforeFakeSerial = 0;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1589991004;
-        genesis.nNonce = 156115;
+        genesis.nTime = 1589991520;
+        genesis.nNonce = 1;
 
         hashGenesisBlock = genesis.GetHash();
         if(genesis.GetHash() != uint256("0x"))
@@ -382,7 +382,7 @@ public:
         printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
         printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         }
-        assert(hashGenesisBlock == uint256("0x00000fe3cb45473f8919026b2ab8d60eed8f58da5db789179602829853f4dd76"));
+        assert(hashGenesisBlock == uint256("0x"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
