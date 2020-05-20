@@ -164,7 +164,7 @@ public:
         nTargetTimespan = 40 * 60;                      // 40 minutes
         nTimeSlotLength = 15;                           // 15 seconds
         nTargetTimespan_V2 = 2 * nTimeSlotLength * 60;  // 30 minutes
-        nMaturity = 100;
+        nMaturity = 15;
         nStakeMinAge = 60 * 60 * 24; // One day minimum staking age
         nStakeMinDepth = 300;
         nFutureTimeDriftPoW = 7200;
