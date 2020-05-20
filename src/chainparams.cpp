@@ -75,7 +75,7 @@ static const Checkpoints::CCheckpointData dataTestnet = {
     0};
 
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest = 
-    boost::assign::map_list_of(0, uint256("0x001"));
+    boost::assign::map_list_of(0, uint256("000001059617b816f52babccb98d6cee6783e4ba6ded517040a6ace1540176b6"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
     0,
@@ -456,34 +456,10 @@ public:
 
         //! Modify the regtest genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1589840060;
-        genesis.nNonce = 1867529;
+        genesis.nNonce = 3292462;
         
         hashGenesisBlock = genesis.GetHash();
-        if(genesis.GetHash() != uint256("0x"))
-        {
-        printf("MSearching for genesis block...\n");
-        uint256 hashTarget;
-        hashTarget.SetCompact(genesis.nBits);
-        while(uint256(genesis.GetHash()) > uint256(hashTarget))
-        {
-            ++genesis.nNonce;
-            if (genesis.nNonce == 0)
-            {
-                printf("Mainnet NONCE WRAPPED, incrementing time");
-                std::cout << std::string("Mainnet NONCE WRAPPED, incrementing time:\n");
-                ++genesis.nTime;
-            }
-            if (genesis.nNonce % 10000 == 0)
-            {
-               printf("Mainnet: nonce %08u: hash = %s \n", genesis.nNonce, genesis.GetHash().ToString().c_str());
-            }
-        }
-        printf("Mainnet block.nTime = %u \n", genesis.nTime);
-        printf("Mainnet block.nNonce = %u \n", genesis.nNonce);
-        printf("Mainnet block.hashMerkleRoot: %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        }
-        assert(hashGenesisBlock == uint256("0x"));
+        assert(hashGenesisBlock == uint256("0x000001059617b816f52babccb98d6cee6783e4ba6ded517040a6ace1540176b6"));
      
         vFixedSeeds.clear(); //! Testnet mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Testnet mode doesn't have any DNS seeds.
