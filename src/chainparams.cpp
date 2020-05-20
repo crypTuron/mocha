@@ -239,6 +239,10 @@ public:
 
         vSeeds.clear();
         
+        // Nodes owned and operated by dev
+        vSeeds.push_back(CDNSSeedData("node1", "45.76.20.15"));
+        vSeeds.push_back(CDNSSeedData("node2", "144.202.51.82"));
+        
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 51);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 52);
         base58Prefixes[STAKING_ADDRESS] = std::vector<unsigned char>(1, 63);
