@@ -175,7 +175,7 @@ public:
         nMinColdStakingAmount = 5 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 7;
+        nLastPOWBlock = 20;
         nMochaBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
         nMochaBadBlocknBits = 0x1c056dac; // Skip nBit validation of Block 259201 per PR #915
         nModifierUpdateBlock = INT_MAX;
