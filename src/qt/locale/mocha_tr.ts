@@ -4403,7 +4403,7 @@ mBEANS Protokolü ile anonimleştirilmiş olacaktır.
                            &lt;ol&gt;&lt;li&gt;
                            Cüzdanınızı tamamen senkronize olduğundan ve son versiyonu kullandığınızdan emin olun.
                            &lt;li&gt;
-                           En az 200 onay almış yeni oluşturulmuş veya eskiden bulunan zMOCHA bakiyeniz olmaldır.
+                           En az 200 onay almış yeni oluşturulmuş veya eskiden bulunan mBEANS bakiyeniz olmaldır.
                            &lt;li&gt;
                            Cüzdanınız online olmalı, stake ve anonimleştirme işlemleri için kilidini açılmış olmalıdır.
                            Bu adımlar tamamlanmışsa staking çalışıyor olmalıdır.
