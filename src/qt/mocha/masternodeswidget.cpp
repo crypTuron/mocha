@@ -347,7 +347,7 @@ void MasterNodesWidget::onDeleteMNClicked(){
 void MasterNodesWidget::onCreateMNClicked(){
     if(verifyWalletUnlocked()) {
         if(walletModel->getBalance() <= (COIN * 10000)){
-            inform(tr("Not enough balance to create a masternode, 1,00,000 MOCHA required."));
+            inform(tr("Not enough balance to create a masternode, 5,000 MOCHA required."));
             return;
         }
         showHideOp(true);
