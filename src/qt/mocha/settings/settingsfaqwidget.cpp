@@ -92,7 +92,7 @@ SettingsFaqWidget::SettingsFaqWidget(QWidget *parent) :
     setCssProperty(ui->pushButtonExit, "btn-faq-exit");
 
     // Web Link
-    ui->pushButtonWebLink->setText("https://mochaite.com/");
+    ui->pushButtonWebLink->setText("https://mocha.network/");
     setCssProperty(ui->pushButtonWebLink, "btn-faq-web");
     setCssProperty(ui->containerButtons, "container-faq-buttons");
 

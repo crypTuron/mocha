@@ -4225,14 +4225,14 @@ Tu cartera MOCHA también necesita estar completamente sincronizada para que pue
                            zPIV is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
                            "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt; 
 zPIV es un método opcional centrado en la privacidad de monedas en la Blockchain MOCHA. Básicamente, todas sus transacciones no pueden ser rastreadas en ningún explorador de bloques. Puedes leer más sobre los aspectos técnicos en el
- &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+ &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
 "Documentación Técnica de MOCHA Zerocoin (zPIV) ". &lt;/a&gt;.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4277,7 +4277,7 @@ zPIV es un método opcional centrado en la privacidad de monedas en la Blockchai
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4294,7 +4294,7 @@ tu archivo mocha.conf y agregar &lt;i&gt; enablezeromint=0&lt;/i&gt; Sin las com
 luego reinicia tu billetera para deshabilitar la impresión automática.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Puedes leer más sobre zPIV en el
-&lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "Documentación Técnica de MOCHA Zerocoin (zPIV)" &lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "Documentación Técnica de MOCHA Zerocoin (zPIV)" &lt;/a&gt;.
 Si deseas conservar y hacer stake tu zPIV, lee la sección "¿Cómo puedo hacer stake?"de las preguntas frecuentes a continuación.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>

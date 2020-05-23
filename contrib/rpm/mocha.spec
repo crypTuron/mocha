@@ -20,8 +20,8 @@ Summary:	Peer to Peer Cryptographic Currency
 
 Group:		Applications/System
 License:	MIT
-URL:		https://mochaite.com/
-Source0:	https://mochaite.com/bin/mocha-core-%{version}/mocha-%{version}.tar.gz
+URL:		https://mocha.network/
+Source0:	https://mocha.network/bin/mocha-core-%{version}/mocha-%{version}.tar.gz
 Source1:	http://download.oracle.com/berkeley-db/db-%{bdbv}.NC.tar.gz
 
 Source10:	https://raw.githubusercontent.com/mocha-project/mocha/v%{version}/contrib/debian/examples/mocha.conf

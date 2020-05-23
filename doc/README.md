@@ -3,7 +3,7 @@ MOCHA Core
 
 Setup
 ---------------------
-[MOCHA Core](http://mochaite.com/wallet) is the original MOCHA client and it builds the backbone of the network. However, it downloads and stores the entire history of MOCHA transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[MOCHA Core](http://mocha.network/wallet) is the original MOCHA client and it builds the backbone of the network. However, it downloads and stores the entire history of MOCHA transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
@@ -28,8 +28,8 @@ Drag MOCHA-Qt to your applications folder, and then run MOCHA-Qt.
 
 * See the documentation at the [MOCHA Wiki](https://github.com/MOCHA-Project/MOCHA/wiki)
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MOCHA Forum](http://forum.mochaite.com/).
-* Join our Discord server [Discord Server](https://discord.mochaite.com)
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [MOCHA Forum](http://forum.mocha.network/).
+* Join our Discord server [Discord Server](https://discord.mocha.network)
 
 Building
 ---------------------
@@ -56,8 +56,8 @@ The MOCHA repo's [root README](/README.md) contains relevant information on the 
 - [Dnsseed Policy](dnsseed-policy.md)
 
 ### Resources
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [MOCHA](http://forum.mochaite.com/) forum.
-* Join the [MOCHA Discord](https://discord.mochaite.com).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [MOCHA](http://forum.mocha.network/) forum.
+* Join the [MOCHA Discord](https://discord.mocha.network).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

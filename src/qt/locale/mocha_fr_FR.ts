@@ -4079,14 +4079,14 @@ pour voir votre solde de monnaie dépensable sur le réseau.
                            zPIV is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
                            "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 zPIV est une méthode optionnelle de fongibilité des pièces sur la blockchain MOCHA, axée sur la confidentialité. Basiquement, cela permet rendre vos transactions intraçables par les explorateurs de blocs. Vous pouvez en savoir plus sur les aspects techniques en consultant le document
-&lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
  "MOCHA Zerocoin (zPIV) Technical Paper".&lt;/a&gt;
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
@@ -4136,7 +4136,7 @@ mon solde en zPIV?</translation>
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4152,7 +4152,7 @@ votre fichier mocha.conf et ajouter &lt;i&gt; enablezeromint=0&lt;/i&gt; sans gu
 et redémarrer votre portefeuille.&lt;/p&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
 Vous pouvez en savoir plus sur zPIV dans
-&lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; le document "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; le document "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
 Si vous voulez conserver et mettre en jeu vos zPIV, veuillez lire la section "Comment staker"
 de la FAQ ci-dessous.
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;

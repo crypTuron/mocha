@@ -4238,7 +4238,7 @@ MOCHA использует консенсус PoS (Proof of Stake), позвол
                            zPIV is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
                            "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4247,7 +4247,7 @@ MOCHA использует консенсус PoS (Proof of Stake), позвол
 zPIV - это необязательная конфиденциальность, которая возможна при микшировании монет
 в блокчейне MOCHA. По сути,ни одна транзакция не может быть отслежена
 ни в одном из обозревателей блоков. Вы можете прочитать больше о технических характеристиках в
-&lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
 "Техническом документе MOCHA Zerocoin (zPIV)"&lt;/a&gt;.
  &lt;/p&gt;&lt;/body&gt;&lt;/html&gt; </translation>
     </message>
@@ -4295,7 +4295,7 @@ zPIV - это необязательная конфиденциальность,
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4310,7 +4310,7 @@ zPIV - это необязательная конфиденциальность,
 Если вы не используете MOCHA-QT или GUI, вы можете просто открыть
 свой файл mocha.conf и добавить &lt;i&gt;enablezeromint=0&lt;/i&gt; без кавычек и
 перезапустите свой кошелек для отключения  автоматической чеканки. &lt;/p&gt; &lt;/p&gt;&lt;p align="justify"&gt; Вы можете прочитать больше о zPIV в
-&lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
  "Технический документ MOCHA Zerocoin (zPIV)"&lt;/a&gt;.
 Если вы хотите продолжать стекинг zPIV, ознакомьтесь с разделом" Как осуществить стекинг"
 в разделе часто задаваемых вопросов ниже.

@@ -55,7 +55,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "MOCHA"
-#define QAPP_ORG_DOMAIN "mochaite.com"
+#define QAPP_ORG_DOMAIN "mocha.network"
 #define QAPP_APP_NAME_DEFAULT "MOCHA-Qt"
 #define QAPP_APP_NAME_TESTNET "MOCHA-Qt-testnet"
 

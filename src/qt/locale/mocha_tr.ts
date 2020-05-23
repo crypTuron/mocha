@@ -4242,7 +4242,7 @@ bu sayede MOCHA sahipleri blok ödülü kazanımına katılabilmektedir
                            zPIV is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
                            "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -4252,7 +4252,7 @@ bu sayede MOCHA sahipleri blok ödülü kazanımına katılabilmektedir
 gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
  hiçbir tarayıcı tarafından takip edilemez. Teknik detayları
  hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt;
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
                            "MOCHA Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </translation>
@@ -4302,7 +4302,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            You can read more about zPIV in the
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
                            If you would like to keep and stake your zPIV, please read the "How do I stake"
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -4312,7 +4312,7 @@ gizlilik-odaklı opsiyonel bir metoddur. Temel olarak işlemleriniz
                            MOCHA cüzdanınız ağa destek olmak için varsayılan olarak tüm MOCHA bakiyenizin 10% 'unu zPIV'e dönüştürecektir. Getirdiği gizlilik avantajını istemiyor veya zPIV stakelemek istemiyorsanız cüzdanınızın otomint özelliğini Ayarlar-&gt;Seçenekler içindeki “zPIV Otomint etkin” seçeneğini değiştirerek devredışı bırakabilirsiniz. MOCHAQT veya GUI kullanmıyorsanız, mocha.conf dosyası içine  &lt;i&gt;enablezeromint=0&lt;/i&gt; ifadesini tırnak işareti olmadan girerek devredışı bırakabilirsiniz. &lt;/p&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            Teknik detayları hakkında daha çok bilgi almak için
-                           &lt;a style='color: #b088ff' href='https://mochaite.com/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
+                           &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt; "MOCHA Zerocoin (zPIV) Teknik Makalesi"&lt;/a&gt;.
                            zPIV'lerinizi tutmak ve stakelemek istiyorsanız, lütfen SSS kısmındaki "Nasıl Stake yaparım"
 kısmını okuyunuz.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
