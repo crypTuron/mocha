@@ -1790,7 +1790,7 @@ CAmount CWallet::GetDelegatedBalance() const
 CAmount CWallet::GetZerocoinBalance(bool fMatureOnly) const
 {
     if (fMatureOnly) {
-        // This code is not removed just for when we back to use zPIV in the future, for now it's useless,
+        // This code is not removed just for when we back to use mBEANS in the future, for now it's useless,
         // every public coin spend is now spendable without need to have new mints on top.
 
         //if (chainActive.Height() > nLastMaturityCheck)
@@ -2179,10 +2179,10 @@ bool CWallet::SelectStakeCoins(std::list<std::unique_ptr<CStakeInput> >& listInp
         }
     }
 
-    /* Disable zPIV Staking
-    //zPIV
+    /* Disable mBEANS Staking
+    //mBEANS
     if ((GetBoolArg("-mbeansstake", true) || fPrecompute) && chainActive.Height() > Params().Zerocoin_Block_V2_Start() && !sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        //Only update zPIV set once per update interval
+        //Only update mBEANS set once per update interval
         bool fUpdate = false;
         static int64_t nTimeLastUpdate = 0;
         if (GetAdjustedTime() - nTimeLastUpdate > nStakeSetUpdateTime) {
@@ -2242,7 +2242,7 @@ bool CWallet::MintableCoins()
         }
     }
 
-    // zPIV
+    // mBEANS
     if (nZpivBalance > 0) {
         std::set<CMintMeta> setMints = mbeansTracker->ListMints(true, true, true);
         for (auto mint : setMints) {
@@ -3666,7 +3666,7 @@ void CWallet::CreateAutoMintTransaction(const CAmount& nMintAmount, CCoinControl
         CAmount nZerocoinBalance = GetZerocoinBalance(false);
         CAmount nBalance = GetUnlockedCoins();
         CAmount dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
-        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld zPIV. Current percentage of zPIV: %lf%%\n",
+        LogPrintf("CWallet::AutoZeromint() @ block %ld: successfully minted %ld mBEANS. Current percentage of mBEANS: %lf%%\n",
                   chainActive.Tip()->nHeight, nMintAmount, dPercentage);
         // Re-adjust startup time to delay next Automint for 5 minutes
         nStartupTime = GetAdjustedTime();
@@ -3709,29 +3709,29 @@ void CWallet::AutoZeromint()
     CAmount nMintAmount = 0;
     CAmount nToMintAmount = 0;
 
-    // zPIV are integers > 0, so we can't mint 10% of 9 MOCHA
+    // mBEANS are integers > 0, so we can't mint 10% of 9 MOCHA
     if (nBalance < 10){
-        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting zPIV\n", nBalance);
+        LogPrint("zero", "CWallet::AutoZeromint(): available balance (%ld) too small for minting mBEANS\n", nBalance);
         return;
     }
 
-    // Percentage of zPIV we already have
+    // Percentage of mBEANS we already have
     double dPercentage = 100 * (double)nZerocoinBalance / (double)(nZerocoinBalance + nBalance);
 
     // Check if minting is actually needed
     if(dPercentage >= nZeromintPercentage){
-        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing zPIV (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
+        LogPrint("zero", "CWallet::AutoZeromint() @block %ld: percentage of existing mBEANS (%lf%%) already >= configured percentage (%d%%). No minting needed...\n",
                   chainActive.Tip()->nHeight, dPercentage, nZeromintPercentage);
         return;
     }
 
-    // zPIV amount needed for the target percentage
+    // mBEANS amount needed for the target percentage
     nToMintAmount = ((nZerocoinBalance + nBalance) * nZeromintPercentage / 100);
 
-    // zPIV amount missing from target (must be minted)
+    // mBEANS amount missing from target (must be minted)
     nToMintAmount = (nToMintAmount - nZerocoinBalance) / COIN;
 
-    // Use the biggest denomination smaller than the needed zPIV We'll only mint exact denomination to make minting faster.
+    // Use the biggest denomination smaller than the needed mBEANS We'll only mint exact denomination to make minting faster.
     // Exception: for big amounts use 6666 (6666 = 1*5000 + 1*1000 + 1*500 + 1*100 + 1*50 + 1*10 + 1*5 + 1) to create all
     // possible denominations to avoid having 5000 denominations only.
     // If a preferred denomination is used (means nPreferredDenom != 0) do nothing until we have enough MOCHA to mint this denomination
@@ -4240,7 +4240,7 @@ bool CWallet::CreateZerocoinMintTransaction(const CAmount nValue, CMutableTransa
             reservekey->ReturnKey();
     }
 
-    // Sign if these are mocha outputs - NOTE that zPIV outputs are signed later in SoK
+    // Sign if these are mocha outputs - NOTE that mBEANS outputs are signed later in SoK
     if (!isZCSpendChange) {
         int nIn = 0;
         for (const std::pair<const CWalletTx*, unsigned int>& coin : setCoins) {
@@ -4262,7 +4262,7 @@ bool CWallet::CheckCoinSpend(libzerocoin::CoinSpend& spend, libzerocoin::Accumul
     }
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST && IsSerialKnown(spend.getCoinSerialNumber())) {
-        //Tried to spend an already spent zPIV
+        //Tried to spend an already spent mBEANS
         receipt.SetStatus(_("The coin spend has been used"), ZPIV_SPENT_USED_ZPIV);
         uint256 hashSerial = GetSerialHash(spend.getCoinSerialNumber());
         if(!mbeansTracker->HasSerialHash(hashSerial))
@@ -4358,7 +4358,7 @@ bool CWallet::MintsToInputVector(std::map<CBigNum, CZerocoinMint>& mapMintsSelec
             if (nVersion >= libzerocoin::PrivateCoin::PUBKEY_VERSION) {
                 CKey key;
                 if (!mint.GetKeyPair(key))
-                    return error("%s: failed to set zPIV privkey mint version=%d", __func__, nVersion);
+                    return error("%s: failed to set mBEANS privkey mint version=%d", __func__, nVersion);
                 privateCoin.setPrivKey(key.GetPrivKey());
             }
             int64_t nTime3 = GetTimeMicros();
@@ -4520,7 +4520,7 @@ bool CWallet::CreateZerocoinSpendTransaction(
     }
 
     if (nValue < 1) {
-        receipt.SetStatus(_("Value is below the smallest available denomination (= 1) of zPIV"), nStatus);
+        receipt.SetStatus(_("Value is below the smallest available denomination (= 1) of mBEANS"), nStatus);
         return false;
     }
 
@@ -4533,10 +4533,10 @@ bool CWallet::CreateZerocoinSpendTransaction(
     CAmount nValueSelected = 0;
     int nCoinsReturned = 0; // Number of coins returned in change from function below (for debug)
     int nNeededSpends = 0;  // Number of spends which would be needed if selection failed
-    const int nMaxSpends = Params().Zerocoin_MaxPublicSpendsPerTransaction(); // Maximum possible spends for one zPIV public spend transaction
+    const int nMaxSpends = Params().Zerocoin_MaxPublicSpendsPerTransaction(); // Maximum possible spends for one mBEANS public spend transaction
     std::vector<CMintMeta> vMintsToFetch;
     if (vSelectedMints.empty()) {
-        //  All of the zPIV used in the public coin spend are mature by default (everything is public now.. no need to wait for any accumulation)
+        //  All of the mBEANS used in the public coin spend are mature by default (everything is public now.. no need to wait for any accumulation)
         setMints = mbeansTracker->ListMints(true, false, true, true); // need to find mints to spend
         if(setMints.empty()) {
             receipt.SetStatus(_("Failed to find Zerocoins in wallet.dat"), nStatus);
@@ -4550,7 +4550,7 @@ bool CWallet::CreateZerocoinSpendTransaction(
         if(!fWholeNumber)
             nValueToSelect = static_cast<CAmount>(ceil(dValue) * COIN);
 
-        // Select the zPIV mints to use in this spend
+        // Select the mBEANS mints to use in this spend
         std::map<libzerocoin::CoinDenomination, CAmount> DenomMap = GetMyZerocoinDistribution();
         std::list<CMintMeta> listMints(setMints.begin(), setMints.end());
         vMintsToFetch = SelectMintsFromList(nValueToSelect, nValueSelected, nMaxSpends, fMinimizeChange,
@@ -4778,7 +4778,7 @@ std::string CWallet::ResetMintZerocoin()
             LogPrintf("%s: failed to archive mint\n", __func__);
     }
 
-    NotifyzPIVReset();
+    NotifymBEANSReset();
 
     std::string strResult = _("ResetMintZerocoin finished: ") + std::to_string(updates) + _(" mints updated, ") + std::to_string(deletions) + _(" mints deleted\n");
     return strResult;
@@ -4818,7 +4818,7 @@ std::string CWallet::ResetSpentZerocoin()
         }
     }
 
-    NotifyzPIVReset();
+    NotifymBEANSReset();
 
     std::string strResult = _("ResetSpentZerocoin finished: ") + std::to_string(removed) + _(" unconfirmed transactions removed\n");
     return strResult;
@@ -5117,7 +5117,7 @@ bool CWallet::SpendZerocoin(
         mbeansTracker->Add(dMint, true);
     }
 
-    receipt.SetStatus("Spend Successful", ZPIV_SPEND_OKAY);  // When we reach this point spending zPIV was successful
+    receipt.SetStatus("Spend Successful", ZPIV_SPEND_OKAY);  // When we reach this point spending mBEANS was successful
 
     return true;
 }
@@ -5218,7 +5218,7 @@ void ThreadPrecomputeSpends()
 
 void CWallet::PrecomputeSpends()
 {
-    // We don't even need to worry about this code.. no zPIV.
+    // We don't even need to worry about this code.. no mBEANS.
     /*
     LogPrintf("Precomputer started\n");
     RenameThread("mocha-precomputer");
@@ -5261,7 +5261,7 @@ void CWallet::PrecomputeSpends()
             nLastCacheWriteDB = nLastCacheCleanUpTime;
         }
 
-        // Get the list of zPIV inputs
+        // Get the list of mBEANS inputs
         std::list <std::unique_ptr<CStakeInput>> listInputs;
         if (!SelectStakeCoins(listInputs, 0, true)) {
             MilliSleep(5000);
@@ -5551,13 +5551,13 @@ int CWallet::getZeromintPercentage()
     return nZeromintPercentage;
 }
 
-void CWallet::setZWallet(CzPIVWallet* zwallet)
+void CWallet::setZWallet(CmBEANSWallet* zwallet)
 {
     zwalletMain = zwallet;
-    mbeansTracker = std::unique_ptr<CzPIVTracker>(new CzPIVTracker(strWalletFile));
+    mbeansTracker = std::unique_ptr<CmBEANSTracker>(new CmBEANSTracker(strWalletFile));
 }
 
-CzPIVWallet* CWallet::getZWallet()
+CmBEANSWallet* CWallet::getZWallet()
 {
     return zwalletMain;
 }

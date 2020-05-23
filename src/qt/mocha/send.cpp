@@ -50,11 +50,11 @@ SendWidget::SendWidget(MOCHAGUI* parent) :
     ui->pushLeft->setText("MOCHA");
     setCssProperty(ui->pushLeft, "btn-check-left");
     ui->pushLeft->setChecked(true);
-    ui->pushRight->setText("zPIV");
+    ui->pushRight->setText("mBEANS");
     setCssProperty(ui->pushRight, "btn-check-right");
 
     /* Subtitle */
-    ui->labelSubtitle1->setText(tr("You can transfer public coins (MOCHA) or private coins (zPIV)"));
+    ui->labelSubtitle1->setText(tr("You can transfer public coins (MOCHA) or private coins (mBEANS)"));
     setCssProperty(ui->labelSubtitle1, "text-subtitle");
 
     ui->labelSubtitle2->setText(tr("Select coin type to spend"));
@@ -149,7 +149,7 @@ void SendWidget::refreshView(){
         btnText = tr("Send MOCHA");
         ui->pushButtonAddRecipient->setVisible(true);
     }else{
-        btnText = tr("Send zPIV");
+        btnText = tr("Send mBEANS");
         ui->pushButtonAddRecipient->setVisible(false);
     }
     ui->pushButtonSave->setText(btnText);
@@ -326,7 +326,7 @@ void SendWidget::onSendClicked(){
     // this way we let users unlock by walletpassphrase or by menu
     // and make many transactions while unlocking through this dialog
     // will call relock
-    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_PIV : AskPassphraseDialog::Context::Send_zPIV, true)){
+    if(!GUIUtil::requestUnlock(walletModel, sendPiv ? AskPassphraseDialog::Context::Send_PIV : AskPassphraseDialog::Context::Send_mBEANS, true)){
         // Unlock wallet was cancelled
         inform(tr("Cannot send, wallet locked"));
         return;
@@ -397,7 +397,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         return false;
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        emit message(tr("Spend Zerocoin"), tr("zPIV is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
+        emit message(tr("Spend Zerocoin"), tr("mBEANS is currently undergoing maintenance."), CClientUIInterface::MSG_ERROR);
         return false;
     }
 
@@ -408,7 +408,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
         outputs.push_back(std::pair<CBitcoinAddress*, CAmount>(new CBitcoinAddress(rec.address.toStdString()),rec.amount));
     }
 
-    // use mints from zPIV selector if applicable
+    // use mints from mBEANS selector if applicable
     std::vector<CMintMeta> vMintsToFetch;
     std::vector<CZerocoinMint> vMintsSelected;
     if (!ZPivControlDialog::setSelectedMints.empty()) {
@@ -460,17 +460,17 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
             changeAddress
     )
             ) {
-        inform(tr("zPIV transaction sent!"));
+        inform(tr("mBEANS transaction sent!"));
         ZPivControlDialog::setSelectedMints.clear();
         clearAll();
         return true;
     } else {
         QString body;
         if (receipt.GetStatus() == ZPIV_SPEND_V1_SEC_LEVEL) {
-            body = tr("Version 1 zPIV require a security level of 100 to successfully spend.");
+            body = tr("Version 1 mBEANS require a security level of 100 to successfully spend.");
         } else {
             int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zPIV transaction
+            const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one mBEANS transaction
             if (nNeededSpends > nMaxSpends) {
                 body = tr("Too much inputs (") + QString::number(nNeededSpends, 10) +
                        tr(") needed.\nMaximum allowed: ") + QString::number(nMaxSpends, 10);
@@ -480,7 +480,7 @@ bool SendWidget::sendZpiv(QList<SendCoinsRecipient> recipients){
                 body = QString::fromStdString(receipt.GetStatusMessage());
             }
         }
-        emit message("zPIV transaction failed", body, CClientUIInterface::MSG_ERROR);
+        emit message("mBEANS transaction failed", body, CClientUIInterface::MSG_ERROR);
         return false;
     }
 }
@@ -609,7 +609,7 @@ void SendWidget::onCoinControlClicked(){
             ui->btnCoinControl->setActive(!ZPivControlDialog::setSelectedMints.empty());
             zPivControl->deleteLater();
         } else {
-            inform(tr("You don't have any zPIV in your balance to select."));
+            inform(tr("You don't have any mBEANS in your balance to select."));
         }
     }
 }

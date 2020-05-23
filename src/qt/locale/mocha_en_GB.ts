@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>All</source>
@@ -1094,28 +1094,28 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Enable automatic minting of MOCHA units to zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Enable automatic minting of MOCHA units to mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Enable zPIV Automint</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Enable mBEANS Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Percentage of autominted zPIV</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Percentage of autominted mBEANS</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferred Automint zPIV Denomination</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Preferred Automint mBEANS Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1718,8 +1718,8 @@ Address: %4
         <translation>Custom Backup Path:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Custom zPIV Backup Path:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>Custom mBEANS Backup Path:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2010,12 +2010,12 @@ Address: %4
         <translation>Spend Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV is currently undergoing maintenance.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>mBEANS is currently undergoing maintenance.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV require a security level of 100 to successfully spend.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 mBEANS require a security level of 100 to successfully spend.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2802,8 +2802,8 @@ Please check the address and try again.</translation>
         <translation>MOCHA Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2822,24 +2822,24 @@ Please check the address and try again.</translation>
         <translation>Obfuscation Create Denominations</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>Converted MOCHA to zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>Converted MOCHA to mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spent zPIV</translation>
+        <source>Spent mBEANS</source>
+        <translation>Spent mBEANS</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>Received MOCHA from zPIV</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>Received MOCHA from mBEANS</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Minted Change as zPIV from zPIV Spend</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>Minted Change as mBEANS from mBEANS Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>Converted zPIV to MOCHA</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>Converted mBEANS to MOCHA</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2960,8 +2960,8 @@ Please check the address and try again.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Select zPIV to Spend</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>Select mBEANS to Spend</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3039,16 +3039,16 @@ Please check the address and try again.</translation>
         <translation>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</source>
         <translation>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3579,8 +3579,8 @@ Please check the address and try again.</translation>
         <translation>Percentage of automatically minted Zerocoin  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>Reindex the MOCHA and zPIV money supply statistics</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>Reindex the MOCHA and mBEANS money supply statistics</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3655,8 +3655,8 @@ Please check the address and try again.</translation>
         <translation>Preferred Denomination for automatically minted Zerocoin  (1/5/10/50/100/500/1000/5000), 0 for no preference. default: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4059,8 +4059,8 @@ Please check the address and try again.</translation>
         <translation>Synchronising sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zPIV wallet...</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>Syncing mBEANS wallet...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4171,8 +4171,8 @@ Please check the address and try again.</translation>
         <translation>Username for JSON-RPC connections</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Value is below the smallest available denomination (= 1) of zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Value is below the smallest available denomination (= 1) of mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

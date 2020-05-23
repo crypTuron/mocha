@@ -45,7 +45,7 @@ QList<TransactionRecord> TransactionRecord::decomposeTransaction(const CWallet* 
             return parts;
 
         if (wtx.HasZerocoinSpendInputs() && (fZSpendFromMe || wallet->mbeansTracker->HasMintTx(hash))) {
-            //zPIV stake reward
+            //mBEANS stake reward
             sub.involvesWatchAddress = false;
             sub.type = TransactionRecord::StakeZPIV;
             sub.address = mapValue["zerocoinmint"];

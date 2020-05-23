@@ -595,8 +595,8 @@
         <translation>Tekstetikedo</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Received</source>

@@ -851,8 +851,8 @@ for staking</source>
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -875,8 +875,8 @@ for staking</source>
         <translation>당신의 입출금 이력을 확인할 수 있습니다.</translation>
     </message>
     <message>
-        <source>Amount of MOCHA and zPIV staked.</source>
-        <translation>스테이킹 된 PIV와 zPIV 양</translation>
+        <source>Amount of MOCHA and mBEANS staked.</source>
+        <translation>스테이킹 된 PIV와 mBEANS 양</translation>
     </message>
     <message>
         <source>All</source>
@@ -907,8 +907,8 @@ for staking</source>
         <translation>자신에게</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>MOCHA 혹은 zPIV를 얻는 법</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>MOCHA 혹은 mBEANS를 얻는 법</translation>
     </message>
     <message>
         <source>You have no staking rewards</source>
@@ -1595,32 +1595,32 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>보상받은 PIV를 zPIV로 자동변환 활성화</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>보상받은 PIV를 mBEANS로 자동변환 활성화</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>zPIV 자동생성 활성화</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>mBEANS 자동생성 활성화</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint 주소 사용</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>PIV수신시 자동변환 zPIV 비율 (최소값:10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>PIV수신시 자동변환 mBEANS 비율 (최소값:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>자동 변환되는 zPIV 비율</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>자동 변환되는 mBEANS 비율</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>이 디노미네이션의 PIV가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>선호하는 자동생성 zPIV 디노미네이션 </translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>선호하는 자동생성 mBEANS 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2239,8 +2239,8 @@ Address: %4
         <translation>맞춤 백업 경로 :</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>맞춤 zPIV 백업 경로 :</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>맞춤 mBEANS 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2588,12 +2588,12 @@ Address: %4
         <translation>제로코인 보내기</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV는 현재 점검중입니다.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>mBEANS는 현재 점검중입니다.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>zPIV 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>mBEANS 버전 1은 성공적으로 보내기 위해서 100 시큐리티 레벨이 필요합니다.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3430,8 +3430,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MOCHA stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV stake</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3450,24 +3450,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>난독화 표시 만들기</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>PIV를 zPIV로 변환</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>PIV를 mBEANS로 변환</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>zPIV 사용</translation>
+        <source>Spent mBEANS</source>
+        <translation>mBEANS 사용</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>zPIV를 PIV로 받음</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>mBEANS를 PIV로 받음</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>zPIV 전송후 남은 zPIV로 잔돈 생성</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>mBEANS 전송후 남은 mBEANS로 잔돈 생성</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>zPIV를 PIV로 변환</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>mBEANS를 PIV로 변환</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3612,8 +3612,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>사용할 zPIV 선택</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>사용할 mBEANS 선택</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3699,16 +3699,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</source>
         <translation>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4228,11 +4228,11 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>Percentage of automatically minted Zerocoin  (1-100, default: %u)</source>
-        <translation>자동생성 zPIV 비율  (1-100, default: %u)</translation>
+        <translation>자동생성 mBEANS 비율  (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>MOCHA 및 zPIV 공급량 다시 색인</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>MOCHA 및 mBEANS 공급량 다시 색인</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4307,8 +4307,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>자동생성 제로코인 선호 디노미네이션 (1/5/10/50/100/500/1000/5000) 0사용안됨, 기본값 : %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4711,8 +4711,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>zPIV 지갑 동기화중...</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>mBEANS 지갑 동기화중...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4819,8 +4819,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Value is below the smallest available denomination (= 1) of zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Value is below the smallest available denomination (= 1) of mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>
@@ -4864,7 +4864,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zPIV 가 부족합니다.</translation>
+        <translation>지갑에 mBEANS 가 부족합니다.</translation>
     </message>
     <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>

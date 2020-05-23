@@ -61,14 +61,14 @@ QT_TRANSLATE_NOOP("mocha-core", ""
 QT_TRANSLATE_NOOP("mocha-core", ""
 "Enable automatic Zerocoin minting from specific addresses (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("mocha-core", ""
-"Enable automatic wallet backups triggered after each zPIV minting (0-1, "
+"Enable automatic wallet backups triggered after each mBEANS minting (0-1, "
 "default: %u)"),
 QT_TRANSLATE_NOOP("mocha-core", ""
 "Enable cold staking functionality (0-1, default: %u). Disabled if staking=0"),
 QT_TRANSLATE_NOOP("mocha-core", ""
 "Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("mocha-core", ""
-"Enable or disable staking functionality for zPIV inputs (0-1, default: %u)"),
+"Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)"),
 QT_TRANSLATE_NOOP("mocha-core", ""
 "Enable spork administration functionality with the appropriate private key."),
 QT_TRANSLATE_NOOP("mocha-core", ""
@@ -181,7 +181,7 @@ QT_TRANSLATE_NOOP("mocha-core", ""
 "Show N confirmations for a successfully locked transaction (0-9999, default: "
 "%u)"),
 QT_TRANSLATE_NOOP("mocha-core", ""
-"Specify custom backup path to add a copy of any automatic zPIV backup. If "
+"Specify custom backup path to add a copy of any automatic mBEANS backup. If "
 "set as dir, every backup generates a timestamped file. If set as file, will "
 "rewrite to that file every backup. If backuppath is set as well, 4 backups "
 "will happen"),
@@ -303,7 +303,7 @@ QT_TRANSLATE_NOOP("mocha-core", "Do not load the wallet and disable wallet RPC c
 QT_TRANSLATE_NOOP("mocha-core", "Do you want to rebuild the block database now?"),
 QT_TRANSLATE_NOOP("mocha-core", "Done loading"),
 QT_TRANSLATE_NOOP("mocha-core", "Enable automatic Zerocoin minting (0-1, default: %u)"),
-QT_TRANSLATE_NOOP("mocha-core", "Enable precomputation of zPIV spends and stakes (0-1, default %u)"),
+QT_TRANSLATE_NOOP("mocha-core", "Enable precomputation of mBEANS spends and stakes (0-1, default %u)"),
 QT_TRANSLATE_NOOP("mocha-core", "Enable publish hash block in <address>"),
 QT_TRANSLATE_NOOP("mocha-core", "Enable publish hash transaction (locked via SwiftX) in <address>"),
 QT_TRANSLATE_NOOP("mocha-core", "Enable publish hash transaction in <address>"),
@@ -406,7 +406,7 @@ QT_TRANSLATE_NOOP("mocha-core", "Recalculating MOCHA supply..."),
 QT_TRANSLATE_NOOP("mocha-core", "Recalculating minted ZPIV..."),
 QT_TRANSLATE_NOOP("mocha-core", "Recalculating spent ZPIV..."),
 QT_TRANSLATE_NOOP("mocha-core", "Receive and display P2P network alerts (default: %u)"),
-QT_TRANSLATE_NOOP("mocha-core", "Reindex the MOCHA and zPIV money supply statistics"),
+QT_TRANSLATE_NOOP("mocha-core", "Reindex the MOCHA and mBEANS money supply statistics"),
 QT_TRANSLATE_NOOP("mocha-core", "Reindex the accumulator database"),
 QT_TRANSLATE_NOOP("mocha-core", "Reindexing zerocoin database..."),
 QT_TRANSLATE_NOOP("mocha-core", "Reindexing zerocoin failed"),
@@ -454,7 +454,7 @@ QT_TRANSLATE_NOOP("mocha-core", "Synchronizing budgets..."),
 QT_TRANSLATE_NOOP("mocha-core", "Synchronizing masternode winners..."),
 QT_TRANSLATE_NOOP("mocha-core", "Synchronizing masternodes..."),
 QT_TRANSLATE_NOOP("mocha-core", "Synchronizing sporks..."),
-QT_TRANSLATE_NOOP("mocha-core", "Syncing zPIV wallet..."),
+QT_TRANSLATE_NOOP("mocha-core", "Syncing mBEANS wallet..."),
 QT_TRANSLATE_NOOP("mocha-core", "The coin spend has been used"),
 QT_TRANSLATE_NOOP("mocha-core", "The transaction did not verify"),
 QT_TRANSLATE_NOOP("mocha-core", "This help message"),
@@ -486,7 +486,7 @@ QT_TRANSLATE_NOOP("mocha-core", "Use block spam filter (default: %u)"),
 QT_TRANSLATE_NOOP("mocha-core", "Use the test network"),
 QT_TRANSLATE_NOOP("mocha-core", "User Agent comment (%s) contains unsafe characters."),
 QT_TRANSLATE_NOOP("mocha-core", "Username for JSON-RPC connections"),
-QT_TRANSLATE_NOOP("mocha-core", "Value is below the smallest available denomination (= 1) of zPIV"),
+QT_TRANSLATE_NOOP("mocha-core", "Value is below the smallest available denomination (= 1) of mBEANS"),
 QT_TRANSLATE_NOOP("mocha-core", "Verifying blocks..."),
 QT_TRANSLATE_NOOP("mocha-core", "Verifying wallet..."),
 QT_TRANSLATE_NOOP("mocha-core", "Wallet %s resides outside data directory %s"),

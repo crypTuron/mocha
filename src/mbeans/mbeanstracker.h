@@ -12,9 +12,9 @@
 #include <list>
 
 class CDeterministicMint;
-class CzPIVWallet;
+class CmBEANSWallet;
 
-class CzPIVTracker
+class CmBEANSTracker
 {
 private:
     bool fInitialized;
@@ -24,9 +24,9 @@ private:
     std::map<uint256, std::unique_ptr<CoinWitnessData> > mapStakeCache; //serialhash, witness value, height
     bool UpdateStatusInternal(const std::set<uint256>& setMempool, CMintMeta& mint);
 public:
-    CzPIVTracker(std::string strWalletFile);
-    ~CzPIVTracker();
-    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CzPIVWallet* zPIVWallet = NULL);
+    CmBEANSTracker(std::string strWalletFile);
+    ~CmBEANSTracker();
+    void Add(const CDeterministicMint& dMint, bool isNew = false, bool isArchived = false, CmBEANSWallet* mBEANSWallet = NULL);
     void Add(const CZerocoinMint& mint, bool isNew = false, bool isArchived = false);
     bool Archive(CMintMeta& meta);
     bool HasPubcoin(const CBigNum& bnValue) const;

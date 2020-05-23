@@ -188,7 +188,7 @@ border:none;</string>
                </size>
               </property>
               <property name="text">
-               <string>1,000 zPIV</string>
+               <string>1,000 mBEANS</string>
               </property>
              </widget>
             </item>
@@ -509,7 +509,7 @@ border:none;</string>
                <item>
                 <widget class="QLabel" name="labelAmountzPiv">
                  <property name="text">
-                  <string>1,000 zPIV</string>
+                  <string>1,000 mBEANS</string>
                  </property>
                 </widget>
                </item>
@@ -532,7 +532,7 @@ border:none;</string>
                  <item>
                   <widget class="QLabel" name="labelPendingzPiv">
                    <property name="text">
-                    <string>60 zPIV</string>
+                    <string>60 mBEANS</string>
                    </property>
                   </widget>
                  </item>
@@ -566,7 +566,7 @@ border:none;</string>
                  <item>
                   <widget class="QLabel" name="labelImmaturezPiv">
                    <property name="text">
-                    <string>10 zPIV</string>
+                    <string>10 mBEANS</string>
                    </property>
                   </widget>
                  </item>

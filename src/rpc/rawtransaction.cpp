@@ -923,7 +923,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 1)
         throw std::runtime_error(
             "createrawzerocoinstake mint_input \n"
-            "\nCreates raw zPIV coinstakes (without MN output).\n" +
+            "\nCreates raw mBEANS coinstakes (without MN output).\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -944,7 +944,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS is currently disabled due to maintenance.");
 
     std::string serial_hash = params[0].get_str();
     if (!IsHex(serial_hash))
@@ -961,7 +961,7 @@ UniValue createrawzerocoinstake(const UniValue& params, bool fHelp)
 
     CMutableTransaction coinstake_tx;
 
-    // create the zerocoinmint output (one spent denom + three 1-zPIV denom)
+    // create the zerocoinmint output (one spent denom + three 1-mBEANS denom)
     libzerocoin::CoinDenomination staked_denom = input_mint.GetDenomination();
     std::vector<CTxOut> vOutMint(5);
     // Mark coin stake transaction
@@ -1005,7 +1005,7 @@ UniValue createrawzerocoinpublicspend(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
             "createrawzerocoinpublicspend mint_input \n"
-            "\nCreates raw zPIV public spend.\n" +
+            "\nCreates raw mBEANS public spend.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"

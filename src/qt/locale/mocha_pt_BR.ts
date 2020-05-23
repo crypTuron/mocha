@@ -894,8 +894,8 @@ para 'Staking'</translation>
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -926,8 +926,8 @@ para 'Staking'</translation>
         <translation>Você pode ver o histórico da sua conta</translation>
     </message>
     <message>
-        <source>Amount of MOCHA and zPIV staked.</source>
-        <translation>Quantidade de MOCHA e zPIV em Staking.</translation>
+        <source>Amount of MOCHA and mBEANS staked.</source>
+        <translation>Quantidade de MOCHA e mBEANS em Staking.</translation>
     </message>
     <message>
         <source>All</source>
@@ -966,8 +966,8 @@ para 'Staking'</translation>
         <translation>Nenhuma transação ainda</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>Como obter o MOCHA ou zPIV</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>Como obter o MOCHA ou mBEANS</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -3555,7 +3555,7 @@ Endereço: %4
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zPIV</translation>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -4095,8 +4095,8 @@ Endereço: %4
         <translation>Nome de usuário para conexões JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>O valor está abaixo da menor denominação disponível (= 1) do zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>O valor está abaixo da menor denominação disponível (= 1) do mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

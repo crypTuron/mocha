@@ -607,8 +607,8 @@
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>All</source>
@@ -1095,28 +1095,28 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
 </translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Omogućite automint MOCHA jedinica na zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Omogućite automint MOCHA jedinica na mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Omogući zPIV Automint</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Omogući mBEANS Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Postotak dolaznih MOCHA koji se automatski pretvara u zPIV putem protokola Zerocoin (min: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Postotak dolaznih MOCHA koji se automatski pretvara u mBEANS putem protokola Zerocoin (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Postotak automatiziranog zPIV</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Postotak automatiziranog mBEANS</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>Pričekajte s automatskom pretvorbom u Zerocoin dok ne bude dostupno dovoljno MOCHA za apoen</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferirana Automint zPIV denominacijad</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Preferirana Automint mBEANS denominacijad</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1712,8 +1712,8 @@ Adresa: %4
         <translation>Put prilagođenog sigurnosnog kopiranja:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Prilagođeni put zPIV sigurnosne kopije:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>Prilagođeni put mBEANS sigurnosne kopije:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1996,12 +1996,12 @@ Adresa: %4
         <translation>Potroši Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>Radovi u tijeku na zPIV.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>Radovi u tijeku na mBEANS.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Verzija 1 zPIV zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>Verzija 1 mBEANS zahtjeva sigurnosnu razinu 100 da se uspješno utroši.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2753,8 +2753,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MOCHA Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2773,24 +2773,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Prikrivanje Stvara Denominacije</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>Pretvoreni MOCHA u zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>Pretvoreni MOCHA u mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Utrošeni zPIV</translation>
+        <source>Spent mBEANS</source>
+        <translation>Utrošeni mBEANS</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>Primljeni MOCHA od zPIV</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>Primljeni MOCHA od mBEANS</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Mintana razlika zPIV od zPIV Utroška</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>Mintana razlika mBEANS od mBEANS Utroška</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>Pretvoreni zPIV u MOCHA</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>Pretvoreni mBEANS u MOCHA</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2911,8 +2911,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Odabrani zPIV za utrošiti</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>Odabrani mBEANS za utrošiti</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2994,16 +2994,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Distribuirano pod MIT softverskom licencom, pogledajte priloženu datoteku COPYING ili &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog zPIV mintanja (0-1, default: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>Omogući automatsko sigurnosno kopiranje novčanika nakon svakog mBEANS mintanja (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</source>
         <translation>Omogući ili onemogući staking funkcionalnosti za MOCHA unose (0-1, default: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Omogući ili onemogući staking funkcionalnosti za zPIV unose (0-1, default: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Omogući ili onemogući staking funkcionalnosti za mBEANS unose (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3523,8 +3523,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Postotak automatskog kovanog Zerocoina (1-100, zadano: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>Ponovno indeksirati statistiku MOCHA i zPIV ponude novca</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>Ponovno indeksirati statistiku MOCHA i mBEANS ponude novca</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3598,8 +3598,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Preferirana denominacija za automatski ovjereni Zerocoin (1/5/10/50/100/500/1000/5000), 0 bez preferencije. zadana vrijednost: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske zPIV sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Navedite put prilagođenog sigurnosnog kopiranja da biste dodali kopiju bilo koje automatske mBEANS sigurnosne kopije. Ako je postavljeno kao dir, svaka sigurnosna kopija generira vremensku datoteku. Ako je postavljen kao datoteka, prepisat će na tu datoteku svaku kopiju. Ako je postavljen backuppath, dogodit će se 4 sigurnosne kopije</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4002,8 +4002,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Sinkronizacija sporka...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Sinkronizacija zPIV novčanika...</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>Sinkronizacija mBEANS novčanika...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4110,8 +4110,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Korisničko ime za JSON-RPC veze</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) zPIV-a</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Vrijednost je niža od najmanje dostupne denominacije (= 1) mBEANS-a</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

@@ -781,8 +781,8 @@
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -829,8 +829,8 @@
         <translation>Još nema transakcija</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>Kako dobiti MOCHA ili zPIV</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>Kako dobiti MOCHA ili mBEANS</translation>
     </message>
     <message>
         <source>Loading chart..</source>
@@ -2371,8 +2371,8 @@
         <translation>480.0685 MOCHA</translation>
     </message>
     <message>
-        <source>1,000 zPIV</source>
-        <translation>1,000 zPIV</translation>
+        <source>1,000 mBEANS</source>
+        <translation>1,000 mBEANS</translation>
     </message>
     <message>
         <source>Available</source>
@@ -2387,12 +2387,12 @@
         <translation>10 MOCHA</translation>
     </message>
     <message>
-        <source>60 zPIV</source>
-        <translation>60 zPIV</translation>
+        <source>60 mBEANS</source>
+        <translation>60 mBEANS</translation>
     </message>
     <message>
-        <source>10 zPIV</source>
-        <translation>10 zPIV</translation>
+        <source>10 mBEANS</source>
+        <translation>10 mBEANS</translation>
     </message>
     <message>
         <source>Error generating address</source>

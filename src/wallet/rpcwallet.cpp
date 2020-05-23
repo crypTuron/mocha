@@ -3138,11 +3138,11 @@ UniValue getzerocoinbalance(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "getzerocoinbalance\n"
-            "\nReturn the wallet's total zPIV balance.\n" +
+            "\nReturn the wallet's total mBEANS balance.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
-            "amount         (numeric) Total zPIV balance.\n"
+            "amount         (numeric) Total mBEANS balance.\n"
 
             "\nExamples:\n" +
             HelpExampleCli("getzerocoinbalance", "") + HelpExampleRpc("getzerocoinbalance", ""));
@@ -3166,7 +3166,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 2)
         throw std::runtime_error(
             "listmintedzerocoins (fVerbose) (fMatureOnly)\n"
-            "\nList all zPIV mints in the wallet.\n" +
+            "\nList all mBEANS mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3184,7 +3184,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             "  {\n"
             "    \"serial hash\": \"xxx\",   (string) Mint serial hash in hex format.\n"
             "    \"version\": n,   (numeric) Zerocoin version number.\n"
-            "    \"zPIV ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
+            "    \"mBEANS ID\": \"xxx\",   (string) Pubcoin in hex format.\n"
             "    \"denomination\": n,   (numeric) Coin denomination.\n"
             "    \"mint height\": n     (numeric) Height of the block containing this mint.\n"
             "    \"confirmations\": n   (numeric) Number of confirmations.\n"
@@ -3217,7 +3217,7 @@ UniValue listmintedzerocoins(const UniValue& params, bool fHelp)
             UniValue objMint(UniValue::VOBJ);
             objMint.push_back(Pair("serial hash", m.hashSerial.GetHex()));  // Serial hash
             objMint.push_back(Pair("version", m.nVersion));                 // Zerocoin version
-            objMint.push_back(Pair("zPIV ID", m.hashPubcoin.GetHex()));     // PubCoin
+            objMint.push_back(Pair("mBEANS ID", m.hashPubcoin.GetHex()));     // PubCoin
             int denom = libzerocoin::ZerocoinDenominationToInt(m.denom);
             objMint.push_back(Pair("denomination", denom));                 // Denomination
             objMint.push_back(Pair("mint height", m.nHeight));              // Mint Height
@@ -3295,7 +3295,7 @@ UniValue listspentzerocoins(const UniValue& params, bool fHelp)
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
             "listspentzerocoins\n"
-            "\nList all the spent zPIV mints in the wallet.\n" +
+            "\nList all the spent mBEANS mints in the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -3327,11 +3327,11 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
             "mintzerocoin amount ( utxos )\n"
-            "\nMint the specified zPIV amount\n" +
+            "\nMint the specified mBEANS amount\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
-            "1. amount      (numeric, required) Enter an amount of Piv to convert to zPIV\n"
+            "1. amount      (numeric, required) Enter an amount of Piv to convert to mBEANS\n"
             "2. utxos       (string, optional) A json array of objects.\n"
             "                   Each object needs the txid (string) and vout (numeric)\n"
             "  [\n"
@@ -3365,7 +3365,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
 
     if (Params().NetworkID() != CBaseChainParams::REGTEST)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV minting is DISABLED");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS minting is DISABLED");
 
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
@@ -3379,7 +3379,7 @@ UniValue mintzerocoin(const UniValue& params, bool fHelp)
 
     int64_t nTime = GetTimeMillis();
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked(true);
 
@@ -3442,7 +3442,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     if (fHelp || params.size() > 5 || params.size() < 3)
         throw std::runtime_error(
             "spendzerocoin amount mintchange minimizechange ( \"address\" ispublicspend)\n"
-            "\nSpend zPIV to a MOCHA address.\n" +
+            "\nSpend mBEANS to a MOCHA address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3483,14 +3483,14 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS is currently disabled due to maintenance.");
 
     EnsureWalletIsUnlocked();
 
     CAmount nAmount = AmountFromValue(params[0]);   // Spending amount
-    bool fMintChange = params[1].get_bool();        // Mint change to zPIV
+    bool fMintChange = params[1].get_bool();        // Mint change to mBEANS
     if (fMintChange && Params().NetworkID() != CBaseChainParams::REGTEST)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV minting is DISABLED, cannot mint change");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS minting is DISABLED, cannot mint change");
     bool fMinimizeChange = params[2].get_bool();    // Minimize change
     std::string address_str = params.size() > 3 ? params[3].get_str() : "";
     bool ispublicspend = params.size() > 4 ? params[4].get_bool() : true;
@@ -3498,7 +3498,7 @@ UniValue spendzerocoin(const UniValue& params, bool fHelp)
     std::vector<CZerocoinMint> vMintsSelected;
 
     if (!ispublicspend && Params().NetworkID() != CBaseChainParams::REGTEST) {
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV old spend only available in regtest for tests purposes");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS old spend only available in regtest for tests purposes");
     }
 
     return DoZpivSpend(nAmount, fMintChange, fMinimizeChange, vMintsSelected, address_str, ispublicspend);
@@ -3510,7 +3510,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 2)
         throw std::runtime_error(
             "spendzerocoinmints mints_list (\"address\") \n"
-            "\nSpend zPIV mints to a MOCHA address.\n" +
+            "\nSpend mBEANS mints to a MOCHA address.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments:\n"
@@ -3547,7 +3547,7 @@ UniValue spendzerocoinmints(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if(sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS is currently disabled due to maintenance.");
 
     std::string address_str = "";
     if (params.size() > 1) {
@@ -3603,7 +3603,7 @@ extern UniValue DoZpivSpend(const CAmount nAmount, bool fMintChange, bool fMinim
 {
     // zerocoin MINT is disabled. fMintChange should be false here. Double check
     if (fMintChange && Params().NetworkID() != CBaseChainParams::REGTEST)
-        throw JSONRPCError(RPC_WALLET_ERROR, "zPIV minting is DISABLED, cannot mint change");
+        throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS minting is DISABLED, cannot mint change");
 
     int64_t nTimeStart = GetTimeMillis();
     CBitcoinAddress address = CBitcoinAddress(); // Optional sending address. Dummy initialization here.
@@ -3697,7 +3697,7 @@ UniValue resetmintzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzPIVTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
+    CmBEANSTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
     std::set<CMintMeta> setMints = mbeansTracker->ListMints(false, false, true);
     std::vector<CMintMeta> vMintsToFind(setMints.begin(), setMints.end());
     std::vector<CMintMeta> vMintsMissing;
@@ -3750,7 +3750,7 @@ UniValue resetspentzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     CWalletDB walletdb(pwalletMain->strWalletFile);
-    CzPIVTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
+    CmBEANSTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
     std::set<CMintMeta> setMints = mbeansTracker->ListMints(false, false, false);
     std::list<CZerocoinSpend> listSpends = walletdb.ListSpentCoins();
     std::list<CZerocoinSpend> listUnconfirmedSpends;
@@ -3855,12 +3855,12 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
 
             "\nArguments:\n"
             "1. \"include_spent\"        (bool, required) Include mints that have already been spent\n"
-            "2. \"denomination\"         (integer, optional) Export a specific denomination of zPIV\n"
+            "2. \"denomination\"         (integer, optional) Export a specific denomination of mBEANS\n"
 
             "\nResult:\n"
             "[                   (array of json object)\n"
             "  {\n"
-            "    \"id\": \"serial hash\",  (string) the mint's zPIV serial hash \n"
+            "    \"id\": \"serial hash\",  (string) the mint's mBEANS serial hash \n"
             "    \"d\": n,         (numeric) the mint's zerocoin denomination \n"
             "    \"p\": \"pubcoin\", (string) The public coin\n"
             "    \"s\": \"serial\",  (string) The secret serial number\n"
@@ -3868,8 +3868,8 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
             "    \"t\": \"txid\",    (string) The txid that the coin was minted in\n"
             "    \"h\": n,         (numeric) The height the tx was added to the blockchain\n"
             "    \"u\": used,      (boolean) Whether the mint has been spent\n"
-            "    \"v\": version,   (numeric) The version of the zPIV\n"
-            "    \"k\": \"privkey\"  (string) The zPIV private key (V2+ zPIV only)\n"
+            "    \"v\": version,   (numeric) The version of the mBEANS\n"
+            "    \"k\": \"privkey\"  (string) The mBEANS private key (V2+ mBEANS only)\n"
             "  }\n"
             "  ,...\n"
             "]\n"
@@ -3888,7 +3888,7 @@ UniValue exportzerocoins(const UniValue& params, bool fHelp)
     if (params.size() == 2)
         denomination = libzerocoin::IntToZerocoinDenomination(params[1].get_int());
 
-    CzPIVTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
+    CmBEANSTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
     std::set<CMintMeta> setMints = mbeansTracker->ListMints(!fIncludeSpent, false, false);
 
     UniValue jsonList(UniValue::VARR);
@@ -3940,7 +3940,7 @@ UniValue importzerocoins(const UniValue& params, bool fHelp)
             "\nResult:\n"
             "{\n"
             "  \"added\": n,        (numeric) The quantity of zerocoin mints that were added\n"
-            "  \"value\": amount    (numeric) The total zPIV value of zerocoin mints that were added\n"
+            "  \"value\": amount    (numeric) The total mBEANS value of zerocoin mints that were added\n"
             "}\n"
 
             "\nExamples\n" +
@@ -4020,7 +4020,7 @@ UniValue reconsiderzerocoins(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "reconsiderzerocoins\n"
-            "\nCheck archived zPIV list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived mBEANS list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult:\n"
@@ -4089,7 +4089,7 @@ UniValue setmbeansseed(const UniValue& params, bool fHelp)
     uint256 seed;
     seed.SetHex(params[0].get_str());
 
-    CzPIVWallet* zwallet = pwalletMain->getZWallet();
+    CmBEANSWallet* zwallet = pwalletMain->getZWallet();
     bool fSuccess = zwallet->SetMasterSeed(seed, true);
     if (fSuccess)
         zwallet->SyncWithChain();
@@ -4105,18 +4105,18 @@ UniValue getmbeansseed(const UniValue& params, bool fHelp)
     if(fHelp || !params.empty())
         throw std::runtime_error(
             "getmbeansseed\n"
-            "\nCheck archived zPIV list to see if any mints were added to the blockchain.\n" +
+            "\nCheck archived mBEANS list to see if any mints were added to the blockchain.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nResult\n"
-            "\"seed\" : s,  (string) The deterministic zPIV seed.\n"
+            "\"seed\" : s,  (string) The deterministic mBEANS seed.\n"
 
             "\nExamples\n" +
             HelpExampleCli("getmbeansseed", "") + HelpExampleRpc("getmbeansseed", ""));
 
     EnsureWalletIsUnlocked();
 
-    CzPIVWallet* zwallet = pwalletMain->getZWallet();
+    CmBEANSWallet* zwallet = pwalletMain->getZWallet();
     uint256 seed = zwallet->GetMasterSeed();
 
     UniValue ret(UniValue::VOBJ);
@@ -4130,12 +4130,12 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 2)
         throw std::runtime_error(
             "generatemintlist\n"
-            "\nShow mints that are derived from the deterministic zPIV seed.\n" +
+            "\nShow mints that are derived from the deterministic mBEANS seed.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"  : n,  (numeric) Which sequential zPIV to start with.\n"
-            "2. \"range\"  : n,  (numeric) How many zPIV to generate.\n"
+            "1. \"count\"  : n,  (numeric) Which sequential mBEANS to start with.\n"
+            "2. \"range\"  : n,  (numeric) How many mBEANS to generate.\n"
 
             "\nResult:\n"
             "[\n"
@@ -4155,7 +4155,7 @@ UniValue generatemintlist(const UniValue& params, bool fHelp)
 
     int nCount = params[0].get_int();
     int nRange = params[1].get_int();
-    CzPIVWallet* zwallet = pwalletMain->zwalletMain;
+    CmBEANSWallet* zwallet = pwalletMain->zwalletMain;
 
     UniValue arrRet(UniValue::VARR);
     for (int i = nCount; i < nCount + nRange; i++) {
@@ -4178,13 +4178,13 @@ UniValue dmbeansstate(const UniValue& params, bool fHelp) {
     if (fHelp || params.size() != 0)
         throw std::runtime_error(
                 "dmbeansstate\n"
-                        "\nThe current state of the mintpool of the deterministic zPIV wallet.\n" +
+                        "\nThe current state of the mintpool of the deterministic mBEANS wallet.\n" +
                 HelpRequiringPassphrase() + "\n"
 
                         "\nExamples\n" +
                 HelpExampleCli("mintpoolstatus", "") + HelpExampleRpc("mintpoolstatus", ""));
 
-    CzPIVWallet* zwallet = pwalletMain->zwalletMain;
+    CmBEANSWallet* zwallet = pwalletMain->zwalletMain;
     UniValue obj(UniValue::VOBJ);
     int nCount, nCountLastUsed;
     zwallet->GetState(nCount, nCountLastUsed);
@@ -4195,7 +4195,7 @@ UniValue dmbeansstate(const UniValue& params, bool fHelp) {
 }
 
 
-void static SearchThread(CzPIVWallet* zwallet, int nCountStart, int nCountEnd)
+void static SearchThread(CmBEANSWallet* zwallet, int nCountStart, int nCountEnd)
 {
     LogPrintf("%s: start=%d end=%d\n", __func__, nCountStart, nCountEnd);
     CWalletDB walletDB(pwalletMain->strWalletFile);
@@ -4230,12 +4230,12 @@ UniValue searchdmbeans(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 3)
         throw std::runtime_error(
             "searchdmbeans\n"
-            "\nMake an extended search for deterministically generated zPIV that have not yet been recognized by the wallet.\n" +
+            "\nMake an extended search for deterministically generated mBEANS that have not yet been recognized by the wallet.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nArguments\n"
-            "1. \"count\"       (numeric) Which sequential zPIV to start with.\n"
-            "2. \"range\"       (numeric) How many zPIV to generate.\n"
+            "1. \"count\"       (numeric) Which sequential mBEANS to start with.\n"
+            "2. \"range\"       (numeric) How many mBEANS to generate.\n"
             "3. \"threads\"     (numeric) How many threads should this operation consume.\n"
 
             "\nExamples\n" +
@@ -4253,7 +4253,7 @@ UniValue searchdmbeans(const UniValue& params, bool fHelp)
 
     int nThreads = params[2].get_int();
 
-    CzPIVWallet* zwallet = pwalletMain->zwalletMain;
+    CmBEANSWallet* zwallet = pwalletMain->zwalletMain;
 
     boost::thread_group* dmbeansThreads = new boost::thread_group();
     int nRangePerThread = nRange / nThreads;
@@ -4336,7 +4336,7 @@ UniValue spendrawzerocoin(const UniValue& params, bool fHelp)
     LOCK2(cs_main, pwalletMain->cs_wallet);
 
     if (sporkManager.IsSporkActive(SPORK_16_ZEROCOIN_MAINTENANCE_MODE))
-            throw JSONRPCError(RPC_WALLET_ERROR, "zPIV is currently disabled due to maintenance.");
+            throw JSONRPCError(RPC_WALLET_ERROR, "mBEANS is currently disabled due to maintenance.");
 
     CBigNum serial;
     serial.SetHex(params[0].get_str());
@@ -4378,7 +4378,7 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
     if(fHelp || params.size() != 0)
         throw std::runtime_error(
             "clearspendcache\n"
-            "\nClear the pre-computed zPIV spend cache, and database.\n" +
+            "\nClear the pre-computed mBEANS spend cache, and database.\n" +
             HelpRequiringPassphrase() + "\n"
 
             "\nExamples\n" +
@@ -4386,7 +4386,7 @@ UniValue clearspendcache(const UniValue& params, bool fHelp)
 
     EnsureWalletIsUnlocked();
 
-    CzPIVTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
+    CmBEANSTracker* mbeansTracker = pwalletMain->mbeansTracker.get();
 
     {
         int nTries = 0;

@@ -96,7 +96,7 @@ enum AvailableCoinsType {
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zPIV send
+// Possible states for mBEANS send
 enum ZerocoinSpendStatus {
     ZPIV_SPEND_OKAY = 0,                            // No error
     ZPIV_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
@@ -260,7 +260,7 @@ public:
      */
     mutable CCriticalSection cs_wallet;
 
-    CzPIVWallet* zwalletMain;
+    CmBEANSWallet* zwalletMain;
 
     std::set<CBitcoinAddress> setAutoConvertAddresses;
 
@@ -268,7 +268,7 @@ public:
     bool fWalletUnlockAnonymizeOnly;
     std::string strWalletFile;
     bool fBackupMints;
-    std::unique_ptr<CzPIVTracker> mbeansTracker;
+    std::unique_ptr<CmBEANSTracker> mbeansTracker;
 
     std::set<int64_t> setKeyPool;
     std::map<CKeyID, CKeyMetadata> mapKeyMetadata;
@@ -299,8 +299,8 @@ public:
     ~CWallet();
     void SetNull();
     int getZeromintPercentage();
-    void setZWallet(CzPIVWallet* zwallet);
-    CzPIVWallet* getZWallet();
+    void setZWallet(CmBEANSWallet* zwallet);
+    CmBEANSWallet* getZWallet();
     bool isZeromintEnabled();
     void setZPivAutoBackups(bool fEnabled);
     bool isMultiSendEnabled();
@@ -556,8 +556,8 @@ public:
     /** MultiSig address added */
     boost::signals2::signal<void(bool fHaveMultiSig)> NotifyMultiSigChanged;
 
-    /** zPIV reset */
-    boost::signals2::signal<void()> NotifyzPIVReset;
+    /** mBEANS reset */
+    boost::signals2::signal<void()> NotifymBEANSReset;
 
     /** notify wallet file backed up */
     boost::signals2::signal<void (const bool& fSuccess, const std::string& filename)> NotifyWalletBacked;

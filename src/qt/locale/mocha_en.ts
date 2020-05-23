@@ -1403,7 +1403,7 @@ address</source>
     </message>
     <message>
         <location line="+42"/>
-        <source>zPIV</source>
+        <source>mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1443,7 +1443,7 @@ address</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Amount of MOCHA and zPIV staked.</source>
+        <source>Amount of MOCHA and mBEANS staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1513,7 +1513,7 @@ address</source>
     </message>
     <message>
         <location line="+5"/>
-        <source>How to get MOCHA or zPIV</source>
+        <source>How to get MOCHA or mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2664,17 +2664,17 @@ https://www.transifex.com/mocha-project/mocha-project-translations</source>
     </message>
     <message>
         <location line="-187"/>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Enable zPIV Automint</source>
+        <source>Enable mBEANS Automint</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Enable automatic zPIV minting from specific addresses</source>
+        <source>Enable automatic mBEANS minting from specific addresses</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2684,12 +2684,12 @@ https://www.transifex.com/mocha-project/mocha-project-translations</source>
     </message>
     <message>
         <location line="+11"/>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Percentage of autominted zPIV</source>
+        <source>Percentage of autominted mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2700,7 +2700,7 @@ https://www.transifex.com/mocha-project/mocha-project-translations</source>
     </message>
     <message>
         <location line="-13"/>
-        <source>Preferred Automint zPIV Denomination</source>
+        <source>Preferred Automint mBEANS Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3203,13 +3203,13 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>Minting zPIV anonymizes your MOCHA by removing any
+        <source>Minting mBEANS anonymizes your MOCHA by removing any
 transaction history, making transactions untraceable </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Mint new zPIV or convert back to MOCHA</source>
+        <source>Mint new mBEANS or convert back to MOCHA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3224,12 +3224,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+87"/>
-        <source>Mint zPIV</source>
+        <source>Mint mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of MOCHA to mint into zPIV</source>
+        <source>Enter amount of MOCHA to mint into mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3239,7 +3239,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enter amount of zPIV to convert back into MOCHA</source>
+        <source>Enter amount of mBEANS to convert back into MOCHA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3249,12 +3249,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+0"/>
-        <source>zPIV is currently undergoing maintenance</source>
+        <source>mBEANS is currently undergoing maintenance</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+8"/>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
+        <source>You need to unlock the wallet to be able to %1 mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3274,12 +3274,12 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+18"/>
-        <source>zPIV minted successfully</source>
+        <source>mBEANS minted successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>zPIV converted back to MOCHA</source>
+        <source>mBEANS converted back to MOCHA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3802,7 +3802,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+29"/>
-        <source>Custom zPIV Backup Path:</source>
+        <source>Custom mBEANS Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4483,7 +4483,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+12"/>
-        <source>You can transfer public coins (MOCHA) or private coins (zPIV)</source>
+        <source>You can transfer public coins (MOCHA) or private coins (mBEANS)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4533,7 +4533,7 @@ transaction history, making transactions untraceable </source>
     </message>
     <message>
         <location line="+3"/>
-        <source>Send zPIV</source>
+        <source>Send mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4602,7 +4602,7 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="-38"/>
-        <source>zPIV is currently undergoing maintenance.</source>
+        <source>mBEANS is currently undergoing maintenance.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4624,12 +4624,12 @@ These coins will no longer be cold-staked.</source>
     </message>
     <message>
         <location line="+31"/>
-        <source>zPIV transaction sent!</source>
+        <source>mBEANS transaction sent!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4681,7 +4681,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+10"/>
-        <source>You don&apos;t have any zPIV in your balance to select.</source>
+        <source>You don&apos;t have any mBEANS in your balance to select.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5200,28 +5200,28 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+28"/>
-        <source>3) MOCHA privacy? What is Zerocoin (zPIV)?</source>
+        <source>3) MOCHA privacy? What is Zerocoin (mBEANS)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+28"/>
-        <source>4) Why are my zPIV unspendable?</source>
+        <source>4) Why are my mBEANS unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into mBEANS automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+23"/>
-        <source>6) How do I receive MOCHA/zPIV?</source>
+        <source>6) How do I receive MOCHA/mBEANS?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+22"/>
-        <source>7) How do I stake MOCHA/zPIV?</source>
+        <source>7) How do I stake MOCHA/mBEANS?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5257,7 +5257,7 @@ Verify that you have installed a predetermined text editor.</source>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  MOCHA incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(mBEANS) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            MOCHA utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of MOCHA to participate in earning block rewards
@@ -5297,18 +5297,18 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>MOCHA privacy? What is Zerocoin (zPIV)?</source>
+        <source>MOCHA privacy? What is Zerocoin (mBEANS)?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
+                           mBEANS is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://mocha.network/mbeans/&apos;&gt;
-                           &quot;MOCHA Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
+                           &quot;MOCHA Zerocoin (mBEANS) Technical Paper&quot;&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5320,14 +5320,14 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my mBEANS unspendable?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, mBEANS will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
@@ -5341,7 +5341,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
+        <source>Why did my wallet convert the balance into mBEANS automatically?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5349,17 +5349,17 @@ Verify that you have installed a predetermined text editor.</source>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
                            By default the MOCHA wallet will convert 10% of your entire MOCHA
-                           balance to zPIV to assist the network. If you do not wish to
-                           stake zPIV or take advantage of the privacy benefit it brings,
+                           balance to mBEANS to assist the network. If you do not wish to
+                           stake mBEANS or take advantage of the privacy benefit it brings,
                            you can disable the automatic minting in your MOCHA wallet by
-                           going to Settings-&gt;Options and deselecting “Enable zPIV Automint”.
+                           going to Settings-&gt;Options and deselecting “Enable mBEANS Automint”.
                            If you are not making use of the MOCHA-QT or GUI you can simply open
                            your mocha.conf file and add &lt;i&gt;enablezeromint=0&lt;/i&gt; Without the quotation
                            marks and restart your wallet to disable automint.&lt;/p&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           You can read more about zPIV in the
-                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://mocha.network/mbeans/&apos;&gt; &quot;MOCHA Zerocoin (zPIV) Technical Paper&quot;&lt;/a&gt;.
-                           If you would like to keep and stake your zPIV, please read the &quot;How do I stake&quot;
+                           You can read more about mBEANS in the
+                           &lt;a style=&apos;color: #b088ff&apos; href=&apos;https://mocha.network/mbeans/&apos;&gt; &quot;MOCHA Zerocoin (mBEANS) Technical Paper&quot;&lt;/a&gt;.
+                           If you would like to keep and stake your mBEANS, please read the &quot;How do I stake&quot;
                            section of the FAQ below.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
@@ -5372,17 +5372,17 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+21"/>
-        <source>How do I receive MOCHA/zPIV?</source>
+        <source>How do I receive MOCHA/mBEANS?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+26"/>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;justify&quot;&gt;
-                           zPIV can be spent and sent to any MOCHA address. The receiver will
-                           receive standard MOCHA but the origin of the MOCHA is anonymized by the zPIV Protocol.
+                           mBEANS can be spent and sent to any MOCHA address. The receiver will
+                           receive standard MOCHA but the origin of the MOCHA is anonymized by the mBEANS Protocol.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more mBEANS you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation type="unfinished"></translation>
@@ -5394,7 +5394,7 @@ Verify that you have installed a predetermined text editor.</source>
     </message>
     <message>
         <location line="+18"/>
-        <source>How do I stake MOCHA/zPIV?</source>
+        <source>How do I stake MOCHA/mBEANS?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5415,12 +5415,12 @@ Verify that you have installed a predetermined text editor.</source>
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state &quot;Staking Enabled&quot; to indicate it is staking.  Using the command line interface (mocha-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
-                           To Stake zPIV:
+                           To Stake mBEANS:
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing mBEANS balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -6665,7 +6665,7 @@ Are you sure?
     <message>
         <location line="-210"/>
         <location line="+321"/>
-        <source>1,000 zPIV</source>
+        <source>1,000 mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -6698,12 +6698,12 @@ Are you sure?
     </message>
     <message>
         <location line="+77"/>
-        <source>60 zPIV</source>
+        <source>60 mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+34"/>
-        <source>10 zPIV</source>
+        <source>10 mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7145,7 +7145,7 @@ Are you sure?
     </message>
     <message>
         <location line="+2"/>
-        <source>zPIV Stake</source>
+        <source>mBEANS Stake</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7185,27 +7185,27 @@ Are you sure?
     </message>
     <message>
         <location line="+4"/>
-        <source>Converted MOCHA to zPIV</source>
+        <source>Converted MOCHA to mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Spent zPIV</source>
+        <source>Spent mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Received MOCHA from zPIV</source>
+        <source>Received MOCHA from mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Minted Change as zPIV from zPIV Spend</source>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Converted zPIV to MOCHA</source>
+        <source>Converted mBEANS to MOCHA</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7605,7 +7605,7 @@ MOCHA Core Wallet</source>
     <name>ZPivControlDialog</name>
     <message>
         <location filename="../forms/mbeanscontroldialog.ui" line="+20"/>
-        <source>Select zPIV to Spend</source>
+        <source>Select mBEANS to Spend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7650,7 +7650,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location filename="../mbeanscontroldialog.cpp" line="+39"/>
-        <source>Select zPIV Denominations to Spend</source>
+        <source>Select mBEANS Denominations to Spend</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7728,7 +7728,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7743,7 +7743,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8218,7 +8218,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
+        <source>Enable precomputation of mBEANS spends and stakes (0-1, default %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8468,7 +8468,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+2"/>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -8565,7 +8565,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+27"/>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9110,7 +9110,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zPIV wallet...</source>
+        <source>Syncing mBEANS wallet...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -9255,7 +9255,7 @@ MOCHA Core Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

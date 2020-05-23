@@ -599,8 +599,8 @@
         <translation>Teksto etiketė</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>All</source>
@@ -1022,24 +1022,24 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>Įrašyti prievadą naudojant &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Įgalinti automatinį konvertavimą iš MOCHA į zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Įgalinti automatinį konvertavimą iš MOCHA į mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Įgalinti zPIV Automatinį nukaldinima</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Įgalinti mBEANS Automatinį nukaldinima</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentas gauto MOCHA, kuris automatiškai bus konvertuotas į zPIV naudojant Zerocoin Protokolą (min: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentas gauto MOCHA, kuris automatiškai bus konvertuotas į mBEANS naudojant Zerocoin Protokolą (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Automatiškai sukurtų zPIV procentas</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Automatiškai sukurtų mBEANS procentas</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Pageidautinas zPIV Automatinio Nukaldinimo Nominalas</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Pageidautinas mBEANS Automatinio Nukaldinimo Nominalas</translation>
     </message>
     <message>
         <source>Connect to the MOCHA network through a SOCKS5 proxy.</source>

@@ -56,7 +56,7 @@ DashboardWidget::DashboardWidget(MOCHAGUI* parent) :
     setCssSubtitleScreen(ui->labelSubtitle);
 
     // Staking Information
-    ui->labelMessage->setText(tr("Amount of MOCHA and zPIV staked."));
+    ui->labelMessage->setText(tr("Amount of MOCHA and mBEANS staked."));
     setCssSubtitleScreen(ui->labelMessage);
     setCssProperty(ui->labelSquarePiv, "square-chart-piv");
     setCssProperty(ui->labelSquarezPiv, "square-chart-mbeans");
@@ -69,7 +69,7 @@ DashboardWidget::DashboardWidget(MOCHAGUI* parent) :
 
     setCssProperty(ui->labelChart, "legend-chart");
 
-    ui->labelAmountZpiv->setText("0 zPIV");
+    ui->labelAmountZpiv->setText("0 mBEANS");
     ui->labelAmountPiv->setText("0 MOCHA");
     setCssProperty(ui->labelAmountPiv, "text-stake-piv-disable");
     setCssProperty(ui->labelAmountZpiv, "text-stake-mbeans-disable");
@@ -141,7 +141,7 @@ DashboardWidget::DashboardWidget(MOCHAGUI* parent) :
     setCssProperty(ui->chartContainer, "container-chart");
     setCssProperty(ui->pushImgEmptyChart, "img-empty-staking-on");
 
-    ui->btnHowTo->setText(tr("How to get MOCHA or zPIV"));
+    ui->btnHowTo->setText(tr("How to get MOCHA or mBEANS"));
     setCssBtnSecondary(ui->btnHowTo);
 
 
@@ -496,7 +496,7 @@ void DashboardWidget::updateStakeFilter() {
     }
 }
 
-// pair MOCHA, zPIV
+// pair MOCHA, mBEANS
 const QMap<int, std::pair<qint64, qint64>> DashboardWidget::getAmountBy() {
     updateStakeFilter();
     const int size = stakesFilter->rowCount();
@@ -551,7 +551,7 @@ bool DashboardWidget::loadChartData(bool withMonthNames) {
     }
 
     chartData = new ChartData();
-    chartData->amountsByCache = getAmountBy(); // pair MOCHA, zPIV
+    chartData->amountsByCache = getAmountBy(); // pair MOCHA, mBEANS
 
     std::pair<int,int> range = getChartRange(chartData->amountsByCache);
     if (range.first == 0 && range.second == 0) {
@@ -633,7 +633,7 @@ void DashboardWidget::onChartRefreshed() {
     }
     // init sets
     set0 = new QBarSet("MOCHA");
-    set1 = new QBarSet("zPIV");
+    set1 = new QBarSet("mBEANS");
     set0->setColor(QColor(92,75,125));
     set1->setColor(QColor(176,136,255));
 

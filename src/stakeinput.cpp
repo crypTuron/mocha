@@ -41,7 +41,7 @@ uint32_t CZPivStake::GetChecksum()
     return nChecksum;
 }
 
-// The zPIV block index is the first appearance of the accumulator checksum that was used in the spend
+// The mBEANS block index is the first appearance of the accumulator checksum that was used in the spend
 // note that this also means when staking that this checksum should be from a block that is beyond 60 minutes old and
 // 100 blocks deep.
 CBlockIndex* CZPivStake::GetIndexFrom()
@@ -86,7 +86,7 @@ bool CZPivStake::GetModifier(uint64_t& nStakeModifier)
     }
 
     int64_t nTimeBlockFrom = pindex->GetBlockTime();
-    // zPIV staking is disabled long before block v7 (and checkpoint is not included in blocks since v7)
+    // mBEANS staking is disabled long before block v7 (and checkpoint is not included in blocks since v7)
     // just return false for now. !TODO: refactor/remove this method
     while (pindex && pindex->nHeight + 1 <= std::min(chainActive.Height(), Params().Zerocoin_Block_Last_Checkpoint()-1)) {
         if (pindex->GetBlockTime() - nTimeBlockFrom > 60 * 60) {
@@ -102,7 +102,7 @@ bool CZPivStake::GetModifier(uint64_t& nStakeModifier)
 
 CDataStream CZPivStake::GetUniqueness()
 {
-    //The unique identifier for a zPIV is a hash of the serial
+    //The unique identifier for a mBEANS is a hash of the serial
     CDataStream ss(SER_GETHASH, 0);
     ss << hashSerial;
     return ss;
@@ -130,23 +130,23 @@ bool CZPivStake::CreateTxIn(CWallet* pwallet, CTxIn& txIn, uint256 hashTxOut)
 
 bool CZPivStake::CreateTxOuts(CWallet* pwallet, std::vector<CTxOut>& vout, CAmount nTotal)
 {
-    //Create an output returning the zPIV that was staked
+    //Create an output returning the mBEANS that was staked
     CTxOut outReward;
     libzerocoin::CoinDenomination denomStaked = libzerocoin::AmountToZerocoinDenomination(this->GetValue());
     CDeterministicMint dMint;
     if (!pwallet->CreateZPIVOutPut(denomStaked, outReward, dMint))
-        return error("%s: failed to create zPIV output", __func__);
+        return error("%s: failed to create mBEANS output", __func__);
     vout.emplace_back(outReward);
 
     //Add new staked denom to our wallet
     if (!pwallet->DatabaseMint(dMint))
-        return error("%s: failed to database the staked zPIV", __func__);
+        return error("%s: failed to database the staked mBEANS", __func__);
 
     for (unsigned int i = 0; i < 3; i++) {
         CTxOut out;
         CDeterministicMint dMintReward;
         if (!pwallet->CreateZPIVOutPut(libzerocoin::CoinDenomination::ZQ_ONE, out, dMintReward))
-            return error("%s: failed to create zPIV output", __func__);
+            return error("%s: failed to create mBEANS output", __func__);
         vout.emplace_back(out);
 
         if (!pwallet->DatabaseMint(dMintReward))
@@ -163,7 +163,7 @@ bool CZPivStake::GetTxFrom(CTransaction& tx)
 
 bool CZPivStake::MarkSpent(CWallet *pwallet, const uint256& txid)
 {
-    CzPIVTracker* mbeansTracker = pwallet->mbeansTracker.get();
+    CmBEANSTracker* mbeansTracker = pwallet->mbeansTracker.get();
     CMintMeta meta;
     if (!mbeansTracker->GetMetaFromStakeHash(hashSerial, meta))
         return error("%s: tracker does not have serialhash", __func__);

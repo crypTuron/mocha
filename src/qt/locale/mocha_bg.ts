@@ -611,8 +611,8 @@
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>All</source>
@@ -1098,28 +1098,28 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>Картографирай портовете използвайки &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Включи автоматичното емитиране на MOCHA единици в zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Включи автоматичното емитиране на MOCHA единици в mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Включи Автоматично емитиране на zPIV</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Включи Автоматично емитиране на mBEANS</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите MOCHA, който автоматично да се конвертира в zPIV посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите MOCHA, който автоматично да се конвертира в mBEANS посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Процент автоматично сечени zPIV</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Процент автоматично сечени mBEANS</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zPIV докато не се съберат достатъчно MOCHA за тази деноминация</translation>
+        <translation>Не бързай с автоматичното конвертиране в mBEANS докато не се съберат достатъчно MOCHA за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zPIV</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен mBEANS</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -1714,8 +1714,8 @@ Address: %4
         <translation>Персонален резервен път:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Персонализиран zPIV резервен път:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>Персонализиран mBEANS резервен път:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -1998,12 +1998,12 @@ Address: %4
         <translation>Похарчи Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>В момента zPIV е в ремонт.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>В момента mBEANS е в ремонт.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Версия 1 zPIV изисква ниво на сигурност от 100 за успешно изразходване.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>Версия 1 mBEANS изисква ниво на сигурност от 100 за успешно изразходване.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -2756,8 +2756,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>MOCHA Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -2776,24 +2776,24 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Обфускация и направа на Деноминации</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>Конвертиран MOCHA във zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>Конвертиран MOCHA във mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Похарчени zPIV</translation>
+        <source>Spent mBEANS</source>
+        <translation>Похарчени mBEANS</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>Получен MOCHA от zPIV</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>Получен MOCHA от mBEANS</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Исечено ресто като zPIV от похарчените zPIV</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>Исечено ресто като mBEANS от похарчените mBEANS</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>Конвертиран zPIV във MOCHA</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>Конвертиран mBEANS във MOCHA</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -2914,8 +2914,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Изберете zPIV за Изпращане</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>Изберете mBEANS за Изпращане</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -2923,7 +2923,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <source>zPiv</source>
-        <translation>zPIV</translation>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Quantity:</source>
@@ -2997,16 +2997,16 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Разпространява се пот MIT софтуерен лиценз, виж съпровождащия файл от &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Включи автоматичните бекъпи на портфейла след всяко zPIV емитиране (0-1, по подразбиране: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>Включи автоматичните бекъпи на портфейла след всяко mBEANS емитиране (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</source>
         <translation>Активиране или деактивиране на функцията за зареждане за MOCHA входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Активиране или деактивиране на функцията за зареждане за zPIV входове (0-1, по подразбиране: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Активиране или деактивиране на функцията за зареждане за mBEANS входове (0-1, по подразбиране: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -3521,8 +3521,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Процент автоматично емитирани Zerocoin (1-100, по подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>Индексирай наново MOCHA и zPIV данните по наличности</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>Индексирай наново MOCHA и mBEANS данните по наличности</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -3597,8 +3597,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Предпочитани деноминации за автоматично изсечените Zerocoin (1/5/10/50/100/500/1000/5000), 0 за каквито и да е. (По подразбиране: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране zPIV. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Посочете персонализиран път за архивиране, за да добавите копие на всяко автоматично архивиране mBEANS. Ако е зададено като реж., Всеки архив генерира файл с времева маркировка. Ако е зададен като файл, ще пренапише към този файл всеки архив. Ако е зададено и резервно копие, ще се случат 4 архиви</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4001,8 +4001,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Синхронизиране на вилицо-лъжиците...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Синхронизиране на zPIV портфейла ...</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>Синхронизиране на mBEANS портфейла ...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4109,8 +4109,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>Потребителско име за JSON-RPC свръзките</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Стойността е под най-малката налична деноминация (= 1) в zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Стойността е под най-малката налична деноминация (= 1) в mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

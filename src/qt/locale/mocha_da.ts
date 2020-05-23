@@ -870,8 +870,8 @@ For Staking</translation>
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Days</source>
@@ -890,8 +890,8 @@ For Staking</translation>
         <translation>Du kan se din konto historik</translation>
     </message>
     <message>
-        <source>Amount of MOCHA and zPIV staked.</source>
-        <translation>Mængden af MOCHA og zPIV opbevaret</translation>
+        <source>Amount of MOCHA and mBEANS staked.</source>
+        <translation>Mængden af MOCHA og mBEANS opbevaret</translation>
     </message>
     <message>
         <source>All</source>
@@ -930,8 +930,8 @@ For Staking</translation>
         <translation>Ingen transaktioner endnu</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>Hvordan man får MOCHA eller zPIV</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>Hvordan man får MOCHA eller mBEANS</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1503,28 +1503,28 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>MAP port ved hjælp af UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Aktivér automatisk mintning af MOCHA-enheder til zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Aktivér automatisk mintning af MOCHA-enheder til mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Aktivér zPIV Automint</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Aktivér mBEANS Automint</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procentdelen af indkommende MOCHA, som automatisk konverteres til zPIV via Zerocoin Protocol (min: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procentdelen af indkommende MOCHA, som automatisk konverteres til mBEANS via Zerocoin Protocol (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procentdel af automatiseret zPIV</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Procentdel af automatiseret mBEANS</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>Vent med automatisk konvertering til Zerocoin, indtil nok MOCHA til denne betegnelse er tilgængelig</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Foretrukket Automint zPIV Denomination</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Foretrukket Automint mBEANS Denomination</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2131,8 +2131,8 @@ Adresse: %4
         <translation>Brugerdefineret Backup-sti:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Brugerdefineret zPIV Backup-sti:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>Brugerdefineret mBEANS Backup-sti:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2491,12 +2491,12 @@ Adresse: %4
         <translation>Tilbring Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV er i øjeblikket under opretholdelse.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>mBEANS er i øjeblikket under opretholdelse.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV kræver et sikkerhedsniveau på 100 til succes.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 mBEANS kræver et sikkerhedsniveau på 100 til succes.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3338,8 +3338,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>MOCHA Stake</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Stake</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS Stake</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -3358,24 +3358,24 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Opret tilsløret designering</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>Konverteret MOCHA til zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>Konverteret MOCHA til mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
+        <source>Spent mBEANS</source>
         <translation>Brugt zPiv</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
+        <source>Received MOCHA from mBEANS</source>
         <translation>Modtaget Piv fra zPiv</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Minted Change som zPIV fra zPIV Spend</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>Minted Change som mBEANS fra mBEANS Spend</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>Konverteret MOCHA til zPIV</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>Konverteret MOCHA til mBEANS</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -3532,8 +3532,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Vælg zPIV for at bruge</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>Vælg mBEANS for at bruge</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -3620,7 +3620,7 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
 &lt;http://www.opensource.org/licenses/mit-license.php&gt;. </translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
         <translation>Aktivér automatiske wallet-sikkerhedskopier udløst efter hver zPiv-mintning (0-1, standard: %u)</translation>
     </message>
     <message>
@@ -3628,8 +3628,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Aktiver eller deaktiver staking-funktionalitet for MOCHA-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktiver eller deaktiver staking-funktionalitet for zPIV-indgange (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Aktiver eller deaktiver staking-funktionalitet for mBEANS-indgange (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4152,8 +4152,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Procentdel af automatisk mintede Zerocoin (10-100, standard: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>Reindex MOCHA og zPIV pengemængde statistikker</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>Reindex MOCHA og mBEANS pengemængde statistikker</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4228,8 +4228,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Foretrukken Betegnelse for automatisk mintede Zerocoin (1/5/10/50/100/500/1000/5000), 0 uden præference. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver zPIV-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Angiv brugerdefineret backup-vej for at tilføje en kopi af enhver mBEANS-backup. Hvis det er angivet som dig, genererer hver backup en tidsstempelet fil. Hvis den er angivet som fil, ønsker man at omskrive til den pågældende fil hver backup. Hvis backupath er indstillet, vil der ske 4 sikkerhedskopier</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -4632,8 +4632,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Synkroniserer sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Syncing zPIV wallet ..</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>Syncing mBEANS wallet ..</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -4740,8 +4740,8 @@ Enten mint højere nomineringer (så færre input er nødvendige) eller reducere
         <translation>Brugernavn til JSON-RPC forbindelser</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Værdien er under den mindste tilgængelige værdi (= 1) for mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

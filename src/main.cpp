@@ -1011,7 +1011,7 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
     //Reject serial's that are already in the blockchain
     int nHeightTx = 0;
     if (IsSerialInBlockchain(spend->getCoinSerialNumber(), nHeightTx))
-        return error("%s : zPIV spend with serial %s is already in block %d\n", __func__,
+        return error("%s : mBEANS spend with serial %s is already in block %d\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), nHeightTx);
 
     return true;
@@ -1019,11 +1019,11 @@ bool ContextualCheckZerocoinSpend(const CTransaction& tx, const libzerocoin::Coi
 
 bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const libzerocoin::CoinSpend* spend, CBlockIndex* pindex, const uint256& hashBlock)
 {
-    //Check to see if the zPIV is properly signed
+    //Check to see if the mBEANS is properly signed
     if (pindex->nHeight >= Params().Zerocoin_Block_V2_Start()) {
         try {
             if (!spend->HasValidSignature())
-                return error("%s: V2 zPIV spend does not have a valid signature\n", __func__);
+                return error("%s: V2 mBEANS spend does not have a valid signature\n", __func__);
         } catch (const libzerocoin::InvalidSerialException& e) {
             // Check if we are in the range of the attack
             if(!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
@@ -1036,7 +1036,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
         if (tx.IsCoinStake())
             expectedType = libzerocoin::SpendType::STAKE;
         if (spend->getSpendType() != expectedType) {
-            return error("%s: trying to spend zPIV without the correct spend type. txid=%s\n", __func__,
+            return error("%s: trying to spend mBEANS without the correct spend type. txid=%s\n", __func__,
                          tx.GetHash().GetHex());
         }
     }
@@ -1047,7 +1047,7 @@ bool ContextualCheckZerocoinSpendNoSerialCheck(const CTransaction& tx, const lib
     if (!spend->HasValidSerial(Params().Zerocoin_Params(fUseV1Params)))  {
         // Up until this block our chain was not checking serials correctly..
         if (!isBlockBetweenFakeSerialAttackRange(pindex->nHeight))
-            return error("%s : zPIV spend with serial %s from tx %s is not in valid range\n", __func__,
+            return error("%s : mBEANS spend with serial %s from tx %s is not in valid range\n", __func__,
                      spend->getCoinSerialNumber().GetHex(), tx.GetHash().GetHex());
         else
             LogPrintf("%s:: HasValidSerial :: Invalid serial detected within range in block %d\n", __func__, pindex->nHeight);
@@ -1409,7 +1409,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
             //Check that txid is not already in the chain
             int nHeightTx = 0;
             if (IsTransactionInChain(tx.GetHash(), nHeightTx))
-                return state.Invalid(error("%s : zPIV spend tx %s already in block %d",
+                return state.Invalid(error("%s : mBEANS spend tx %s already in block %d",
                         __func__, tx.GetHash().GetHex(), nHeightTx), REJECT_DUPLICATE, "bad-txns-inputs-spent");
 
             //Check for double spending of serial #'s
@@ -1478,7 +1478,7 @@ bool AcceptToMemoryPool(CTxMemPool& pool, CValidationState& state, const CTransa
                 }
             }
 
-            // Check that zPIV mints (if included) are not already known
+            // Check that mBEANS mints (if included) are not already known
             for (auto& out : tx.vout) {
                 if (!out.IsZerocoinMint())
                     continue;
@@ -2872,7 +2872,7 @@ void RecalculateZPIVSpent()
             uiInterface.ShowProgress(_("Recalculating spent ZPIV..."), percent);
         }
 
-        //Rewrite zPIV supply
+        //Rewrite mBEANS supply
         CBlock block;
         assert(ReadBlockFromDisk(block, pindex));
 
@@ -2881,13 +2881,13 @@ void RecalculateZPIVSpent()
         //Reset the supply to previous block
         pindex->mapZerocoinSupply = pindex->pprev->mapZerocoinSupply;
 
-        //Add mints to zPIV supply
+        //Add mints to mBEANS supply
         for (auto denom : libzerocoin::zerocoinDenomList) {
             long nDenomAdded = count(pindex->vMintDenominationsInBlock.begin(), pindex->vMintDenominationsInBlock.end(), denom);
             pindex->mapZerocoinSupply.at(denom) += nDenomAdded;
         }
 
-        //Remove spends from zPIV supply
+        //Remove spends from mBEANS supply
         for (auto denom : listDenomsSpent)
             pindex->mapZerocoinSupply.at(denom)--;
 
@@ -3094,7 +3094,7 @@ bool UpdateZPIVSupply(const CBlock& block, CBlockIndex* pindex, bool fJustCheck)
         LogPrint("zero", "%s coins for denomination %d pubcoin %s\n", __func__, denom, pindex->mapZerocoinSupply.at(denom));
 
     // Update Wrapped Serials amount
-    // A one-time event where only the zPIV supply was off (due to serial duplication off-chain on main net)
+    // A one-time event where only the mBEANS supply was off (due to serial duplication off-chain on main net)
     if (Params().NetworkID() == CBaseChainParams::MAIN && pindex->nHeight == Params().Zerocoin_Block_EndFakeSerial() + 1
             && pindex->GetZerocoinSupply() < Params().GetSupplyBeforeFakeSerial() + GetWrapppedSerialInflationAmount()) {
         for (auto denom : libzerocoin::zerocoinDenomList) {
@@ -3237,7 +3237,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zPIV mints are not already known
+            // Check that mBEANS mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3266,7 +3266,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
                 }
             }
 
-            // Check that zPIV mints are not already known
+            // Check that mBEANS mints are not already known
             if (tx.HasZerocoinMintOutputs()) {
                 for (auto& out : tx.vout) {
                     if (!out.IsZerocoinMint())
@@ -3322,9 +3322,9 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
     //     RecalculatePIVSupply(Params().Zerocoin_StartHeight());
     // }
 
-    //Track zPIV money supply in the block index
+    //Track mBEANS money supply in the block index
     if (!UpdateZPIVSupply(block, pindex, fJustCheck))
-        return state.DoS(100, error("%s: Failed to calculate new zPIV supply for block=%s height=%d", __func__,
+        return state.DoS(100, error("%s: Failed to calculate new mBEANS supply for block=%s height=%d", __func__,
                                     block.GetHash().GetHex(), pindex->nHeight), REJECT_INVALID);
 
     // track money supply and mint amount info
@@ -3387,7 +3387,7 @@ bool ConnectBlock(const CBlock& block, CValidationState& state, CBlockIndex* pin
         setDirtyBlockIndex.insert(pindex);
     }
 
-    //Record zPIV serials
+    //Record mBEANS serials
     if (pwalletMain) {
         std::set<uint256> setAddedTx;
         for (const std::pair<libzerocoin::CoinSpend, uint256>& pSpend : vSpends) {
@@ -3535,7 +3535,7 @@ void static UpdateTip(CBlockIndex* pindexNew)
     /* Zerocoin minting is disabled
      *
 #ifdef ENABLE_WALLET
-    // If turned on AutoZeromint will automatically convert MOCHA to zPIV
+    // If turned on AutoZeromint will automatically convert MOCHA to mBEANS
     if (pwalletMain && pwalletMain->isZeromintEnabled())
         pwalletMain->AutoZeromint();
 #endif // ENABLE_WALLET
@@ -4486,7 +4486,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
         ))
             return error("%s : CheckTransaction failed", __func__);
 
-        // double check that there are no double spent zPIV spends in this block
+        // double check that there are no double spent mBEANS spends in this block
         if (tx.HasZerocoinSpendInputs()) {
             for (const CTxIn& txIn : tx.vin) {
                 bool isPublicSpend = txIn.IsZerocoinPublicSpend();
@@ -4508,7 +4508,7 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                         spend = TxInToZerocoinSpend(txIn);
                     }
                     if (std::count(vBlockSerials.begin(), vBlockSerials.end(), spend.getCoinSerialNumber()))
-                        return state.DoS(100, error("%s : Double spending of zPIV serial %s in block\n Block: %s",
+                        return state.DoS(100, error("%s : Double spending of mBEANS serial %s in block\n Block: %s",
                                                     __func__, spend.getCoinSerialNumber().GetHex(), block.ToString()));
                     vBlockSerials.emplace_back(spend.getCoinSerialNumber());
                 }
@@ -4818,17 +4818,17 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
         // Inputs
         std::vector<CTxIn> pivInputs;
-        std::vector<CTxIn> zPIVInputs;
+        std::vector<CTxIn> mBEANSInputs;
 
         for (const CTxIn& stakeIn : stakeTxIn.vin) {
             if(stakeIn.IsZerocoinSpend()){
-                zPIVInputs.push_back(stakeIn);
+                mBEANSInputs.push_back(stakeIn);
             }else{
                 pivInputs.push_back(stakeIn);
             }
         }
         const bool hasPIVInputs = !pivInputs.empty();
-        const bool hasZPIVInputs = !zPIVInputs.empty();
+        const bool hasZPIVInputs = !mBEANSInputs.empty();
 
         // ZC started after PoS.
         // Check for serial double spent on the same block, TODO: Move this to the proper method..
@@ -4936,9 +4936,9 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             // Split height
             splitHeight = prev->nHeight;
 
-            // Now that this loop if completed. Check if we have zPIV inputs.
+            // Now that this loop if completed. Check if we have mBEANS inputs.
             if(hasZPIVInputs){
-                for (const CTxIn& zPivInput : zPIVInputs) {
+                for (const CTxIn& zPivInput : mBEANSInputs) {
                     libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
 
                     // First check if the serials were not already spent on the forked blocks.
@@ -5001,7 +5001,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
             }
         } else {
             if(!isBlockFromFork)
-                for (const CTxIn& zPivInput : zPIVInputs) {
+                for (const CTxIn& zPivInput : mBEANSInputs) {
                         libzerocoin::CoinSpend spend = TxInToZerocoinSpend(zPivInput);
                         if (!ContextualCheckZerocoinSpend(stakeTxIn, &spend, pindex, 0))
                             return state.DoS(100,error("%s: main chain ContextualCheckZerocoinSpend failed for tx %s", __func__,

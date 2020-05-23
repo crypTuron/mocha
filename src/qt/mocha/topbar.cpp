@@ -547,7 +547,7 @@ void TopBar::updateBalances(const CAmount& balance, const CAmount& unconfirmedBa
     //CAmount nTotalBalance = balance + unconfirmedBalance + immatureBalance;
     CAmount pivAvailableBalance = balance + delegatedBalance - nLockedBalance;
 
-    // zPIV Balance
+    // mBEANS Balance
     CAmount matureZerocoinBalance = zerocoinBalance - unconfirmedZerocoinBalance - immatureZerocoinBalance;
 
     // Set

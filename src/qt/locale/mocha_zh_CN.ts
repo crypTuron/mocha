@@ -1123,8 +1123,8 @@ address</source>
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -1155,8 +1155,8 @@ address</source>
         <translation>您可以查看您的帐户的历史</translation>
     </message>
     <message>
-        <source>Amount of MOCHA and zPIV staked.</source>
-        <translation>已加注的PIV 和 zPIV 金额</translation>
+        <source>Amount of MOCHA and mBEANS staked.</source>
+        <translation>已加注的PIV 和 mBEANS 金额</translation>
     </message>
     <message>
         <source>All</source>
@@ -1211,8 +1211,8 @@ address</source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>如何获取PIV 或 zPIV</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>如何获取PIV 或 mBEANS</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -2158,36 +2158,36 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>端口使用&amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>启动自动铸造PIV到zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>启动自动铸造PIV到mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>启动自动铸造zPIV</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>启动自动铸造mBEANS</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>启用从特定地址自动生成zPIV</translation>
+        <source>Enable automatic mBEANS minting from specific addresses</source>
+        <translation>启用从特定地址自动生成mBEANS</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>启动自动铸造地址</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>通过零币协议自动转换为zPIV的传入PIV的百分比(最小:10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>通过零币协议自动转换为mBEANS的传入PIV的百分比(最小:10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>自动铸造的zPIV百分比</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>自动铸造的mBEANS百分比</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>等待自动转换为零币，直到足够的PIV为这种面额可用</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>首选自动铸造zPIV面额</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>首选自动铸造mBEANS面额</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2565,14 +2565,14 @@ Address: %4
         <translation>铸造</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your MOCHA by removing any
+        <source>Minting mBEANS anonymizes your MOCHA by removing any
 transaction history, making transactions untraceable </source>
-        <translation>铸造zPIV会通过删除任何
+        <translation>铸造mBEANS会通过删除任何
 交易历史匿名化您的PIV，使交易无法被跟踪</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to MOCHA</source>
-        <translation>铸造新的zPIV或转换回PIV</translation>
+        <source>Mint new mBEANS or convert back to MOCHA</source>
+        <translation>铸造新的mBEANS或转换回PIV</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2583,32 +2583,32 @@ transaction history, making transactions untraceable </source>
         <translation>暂无交易</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>铸造zPIV</translation>
+        <source>Mint mBEANS</source>
+        <translation>铸造mBEANS</translation>
     </message>
     <message>
-        <source>Enter amount of MOCHA to mint into zPIV</source>
-        <translation>输入一定量的PIV铸造成zPIV</translation>
+        <source>Enter amount of MOCHA to mint into mBEANS</source>
+        <translation>输入一定量的PIV铸造成mBEANS</translation>
     </message>
     <message>
         <source>Convert back to MOCHA</source>
         <translation>转换回PIV</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into MOCHA</source>
-        <translation>输入一定量的zPIV转换回PIV</translation>
+        <source>Enter amount of mBEANS to convert back into MOCHA</source>
+        <translation>输入一定量的mBEANS转换回PIV</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV目前正在维护中</translation>
+        <source>mBEANS is currently undergoing maintenance</source>
+        <translation>mBEANS目前正在维护中</translation>
     </message>
     <message>
-        <source>You need to unlock the wallet to be able to %1 zPIV</source>
-        <translation>你需要解锁钱包才能%1 zPIV</translation>
+        <source>You need to unlock the wallet to be able to %1 mBEANS</source>
+        <translation>你需要解锁钱包才能%1 mBEANS</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2623,12 +2623,12 @@ transaction history, making transactions untraceable </source>
         <translation>无效值</translation>
     </message>
     <message>
-        <source>zPIV minted successfully</source>
-        <translation>zPIV铸造成功</translation>
+        <source>mBEANS minted successfully</source>
+        <translation>mBEANS铸造成功</translation>
     </message>
     <message>
-        <source>zPIV converted back to MOCHA</source>
-        <translation>zPIV 转换回PIV</translation>
+        <source>mBEANS converted back to MOCHA</source>
+        <translation>mBEANS 转换回PIV</translation>
     </message>
     <message>
         <source>You don't have any MOCHA to select.</source>
@@ -3018,8 +3018,8 @@ transaction history, making transactions untraceable </source>
         <translation>自定义备份路径:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>自定义zPIV备份路径:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>自定义mBEANS备份路径:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3559,8 +3559,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>发送</translation>
     </message>
     <message>
-        <source>You can transfer public coins (MOCHA) or private coins (zPIV)</source>
-        <translation>您可以转换公共币(MOCHA)或私人币(zPIV)</translation>
+        <source>You can transfer public coins (MOCHA) or private coins (mBEANS)</source>
+        <translation>您可以转换公共币(MOCHA)或私人币(mBEANS)</translation>
     </message>
     <message>
         <source>Select coin type to spend</source>
@@ -3599,8 +3599,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         <translation>花费PIV</translation>
     </message>
     <message>
-        <source>Send zPIV</source>
-        <translation>花费zPIV</translation>
+        <source>Send mBEANS</source>
+        <translation>花费mBEANS</translation>
     </message>
     <message>
         <source>Total remaining from the selected UTXO</source>
@@ -3655,8 +3655,8 @@ These coins will no longer be cold-staked.</source>
         <translation>花费零币</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV目前正在维护中</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>mBEANS目前正在维护中</translation>
     </message>
     <message>
         <source>Coin control mint not found</source>
@@ -3675,12 +3675,12 @@ These coins will no longer be cold-staked.</source>
 %2</translation>
     </message>
     <message>
-        <source>zPIV transaction sent!</source>
-        <translation>zPIV交易已发送！</translation>
+        <source>mBEANS transaction sent!</source>
+        <translation>mBEANS交易已发送！</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>版本1 zPIV要求安全级别为100才能成功使用。</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>版本1 mBEANS要求安全级别为100才能成功使用。</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -3723,8 +3723,8 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
         <translation>您没有任何PIV可供选择。</translation>
     </message>
     <message>
-        <source>You don't have any zPIV in your balance to select.</source>
-        <translation>你的余额中没有zPIV可供选择。</translation>
+        <source>You don't have any mBEANS in your balance to select.</source>
+        <translation>你的余额中没有mBEANS可供选择。</translation>
     </message>
     <message>
         <source>No contacts available, you can go to the contacts screen and add some there!</source>
@@ -4132,26 +4132,26 @@ Verify that you have installed a predetermined text editor.</source>
         <translation>2) 我的PIV为什么不能用？</translation>
     </message>
     <message>
-        <source>3) MOCHA privacy? What is Zerocoin (zPIV)?</source>
-        <translation>3）MOCHA 隐私？什么是零币(zPIV)？</translation>
+        <source>3) MOCHA privacy? What is Zerocoin (mBEANS)?</source>
+        <translation>3）MOCHA 隐私？什么是零币(mBEANS)？</translation>
     </message>
     <message>
-        <source>4) Why are my zPIV unspendable?</source>
-        <translation>4) 我的zPIV为什么不能用？</translation>
+        <source>4) Why are my mBEANS unspendable?</source>
+        <translation>4) 我的mBEANS为什么不能用？</translation>
     </message>
     <message>
         <source>5) Why did my wallet convert the balance
-    into zPIV automatically?</source>
+    into mBEANS automatically?</source>
         <translation>5）为什么我的钱包把余额自动转换成
-zPIV了?</translation>
+mBEANS了?</translation>
     </message>
     <message>
-        <source>6) How do I receive MOCHA/zPIV?</source>
-        <translation>6）如何接收PIV/zPIV?</translation>
+        <source>6) How do I receive MOCHA/mBEANS?</source>
+        <translation>6）如何接收PIV/mBEANS?</translation>
     </message>
     <message>
-        <source>7) How do I stake MOCHA/zPIV?</source>
-        <translation>7）如何加注PIV/zPIV?</translation>
+        <source>7) How do I stake MOCHA/mBEANS?</source>
+        <translation>7）如何加注PIV/mBEANS?</translation>
     </message>
     <message>
         <source>8) Where I should go if I need support?</source>
@@ -4180,7 +4180,7 @@ zPIV了?</translation>
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  MOCHA incorporates market leading security &amp;
                            privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zPIV) and Zerocoin staking.
+                           to implement ZeroCoin(mBEANS) and Zerocoin staking.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            MOCHA utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of MOCHA to participate in earning block rewards
@@ -4194,7 +4194,7 @@ MOCHA是一种使用区块链技术的数字在线货币
 全球范围内快捷交易，即时，基本为
 零的交易费用。MOCHA是市场上领先的安全和
 隐私加密货币，也是第一个PoS(股权证明)加密货币
-实现零币(zPIV)和零币加注。
+实现零币(mBEANS)和零币加注。
 &lt;/p&gt;&lt;p align="justify"&gt;
 MOCHA使用了一个股权证明(PoS)一致系统算法，
 允许所有MOCHA的所有者参与赚取区块奖励
@@ -4234,28 +4234,28 @@ MOCHA使用了一个股权证明(PoS)一致系统算法，
         <translation>3</translation>
     </message>
     <message>
-        <source>MOCHA privacy? What is Zerocoin (zPIV)?</source>
-        <translation>MOCHA 隐私？什么是零币(zPIV)？</translation>
+        <source>MOCHA privacy? What is Zerocoin (mBEANS)?</source>
+        <translation>MOCHA 隐私？什么是零币(mBEANS)？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV is an optional privacy-centric method of coin mixing on the
+                           mBEANS is an optional privacy-centric method of coin mixing on the
                            MOCHA blockchain. Basically all your transactions cannot be tracked
                            on to any block explorer. You can read more about the technicals in the
                            &lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
-                           "MOCHA Zerocoin (zPIV) Technical Paper"&lt;/a&gt;.
+                           "MOCHA Zerocoin (mBEANS) Technical Paper"&lt;/a&gt;.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-zPIV是一种可选的以隐私为中心的隐私币
+mBEANS是一种可选的以隐私为中心的隐私币
 它是MOCHA区块链的一员，基本上在任何块资源管理器
 所有的交易都不能被跟踪&lt;a style='color: #b088ff' href='https://mocha.network/mbeans/'&gt;
 
 你可以阅读更多关于技术方面的文章&lt;/a&gt;
 
-MOCHA零币(zPIV)技术文件
+MOCHA零币(mBEANS)技术文件
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
 </translation>
     </message>
@@ -4264,20 +4264,20 @@ MOCHA零币(zPIV)技术文件
         <translation>4</translation>
     </message>
     <message>
-        <source>Why are my zPIV unspendable?</source>
+        <source>Why are my mBEANS unspendable?</source>
         <translation>我的PIV为什么不能用？</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           After minting, zPIV will require 20 confirmations as well as 1
+                           After minting, mBEANS will require 20 confirmations as well as 1
                            additional mint of the same denomination on the network to
                            become eligible for spending.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-铸币后，zPIV将需要20个确认和1个确认
+铸币后，mBEANS将需要20个确认和1个确认
 在网络上增加相同面额的铸币
 才够资格消费。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
@@ -4287,32 +4287,32 @@ MOCHA零币(zPIV)技术文件
         <translation>5</translation>
     </message>
     <message>
-        <source>Why did my wallet convert the balance into zPIV automatically?</source>
-        <translation>为什么我的钱包会自动将余额转换成zPIV ?</translation>
+        <source>Why did my wallet convert the balance into mBEANS automatically?</source>
+        <translation>为什么我的钱包会自动将余额转换成mBEANS ?</translation>
     </message>
     <message>
         <source>6</source>
         <translation>6</translation>
     </message>
     <message>
-        <source>How do I receive MOCHA/zPIV?</source>
-        <translation>我怎么接收PIV/zPIV?</translation>
+        <source>How do I receive MOCHA/mBEANS?</source>
+        <translation>我怎么接收PIV/mBEANS?</translation>
     </message>
     <message>
         <source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-                           zPIV can be spent and sent to any MOCHA address. The receiver will
-                           receive standard MOCHA but the origin of the MOCHA is anonymized by the zPIV Protocol.
+                           mBEANS can be spent and sent to any MOCHA address. The receiver will
+                           receive standard MOCHA but the origin of the MOCHA is anonymized by the mBEANS Protocol.
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           If you want more zPIV you will need to mint your balance in the “Privacy” tab.
+                           If you want more mBEANS you will need to mint your balance in the “Privacy” tab.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
-可以使用zPIV并将其发送到任何MOCHA地址。接收机将
-接收标准的MOCHA，但是根据zPIV协议，MOCHA的来源是匿名的。
+可以使用mBEANS并将其发送到任何MOCHA地址。接收机将
+接收标准的MOCHA，但是根据mBEANS协议，MOCHA的来源是匿名的。
 &lt;/p&gt;&lt;p align="justify"&gt;
-如果你想要更多的zPIV，你将需要在“隐私”标签上铸造你的余额。
+如果你想要更多的mBEANS，你将需要在“隐私”标签上铸造你的余额。
 &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -4320,8 +4320,8 @@ MOCHA零币(zPIV)技术文件
         <translation>7</translation>
     </message>
     <message>
-        <source>How do I stake MOCHA/zPIV?</source>
-        <translation>我怎么加注PIV/zPIV?</translation>
+        <source>How do I stake MOCHA/mBEANS?</source>
+        <translation>我怎么加注PIV/mBEANS?</translation>
     </message>
     <message>
         <source>
@@ -4340,12 +4340,12 @@ MOCHA零币(zPIV)技术文件
                            You can see the status of staking in the wallet by mousing over the package icon in the row on the top left of the wallet interface. There package will be lit up and will state "Staking Enabled" to indicate it is staking.  Using the command line interface (mocha-cli); the command &lt;i&gt;getstakingstatus&lt;/i&gt; will confirm that staking is active.
                            &lt;/li&gt;&lt;/ol&gt;
                            &lt;/p&gt;&lt;p align="justify"&gt;
-                           To Stake zPIV:
+                           To Stake mBEANS:
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            &lt;ol&gt;&lt;li&gt;
                            Make sure your wallet is completely synchronized and you are using the latest release.
                            &lt;li&gt;
-                           Your newly minted or existing zPIV balance must have a minimum of 200 confirmations.
+                           Your newly minted or existing mBEANS balance must have a minimum of 200 confirmations.
                            &lt;li&gt;
                            Your wallet must stay online and be unlocked for anonymization and staking purposes.
                            Staking should now be enabled.
@@ -4368,11 +4368,11 @@ MOCHA零币(zPIV)技术文件
 您可以通过将鼠标移到钱包界面左上角的行中的package图标上来查看在钱包中进行标记的状态。被点亮，并将状态“Staking启用”，以表明它是加注状态。使用命令行接口(mocha-cli);命令getstakingstatus将确认加注是活跃状态。
 &lt;/li&gt;&lt;/ol&gt;
 &lt;/p&gt;&lt;p align="justify"&gt;
-加注zPIV:&lt;/p&gt;&lt;p align="justify"&gt;
+加注mBEANS:&lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ol&gt;&lt;li&gt;
 确保你的钱包是完全同步的，且使用最新版本
 &lt;li&gt;
-您新创建的或现有的zPIV余额必须至少有200个确认。
+您新创建的或现有的mBEANS余额必须至少有200个确认。
 &lt;li&gt;
 我们的钱包必须在线，并为匿名和加注的目的被解锁。
 加注现在应该是启用状态了。
@@ -5398,8 +5398,8 @@ Are you sure?
         <translation>480.0685 MOCHA</translation>
     </message>
     <message>
-        <source>1,000 zPIV</source>
-        <translation>1,000 zPIV</translation>
+        <source>1,000 mBEANS</source>
+        <translation>1,000 mBEANS</translation>
     </message>
     <message>
         <source>Available</source>
@@ -5422,11 +5422,11 @@ Are you sure?
         <translation>10 MOCHA</translation>
     </message>
     <message>
-        <source>60 zPIV</source>
+        <source>60 mBEANS</source>
         <translation>60 MOCHA</translation>
     </message>
     <message>
-        <source>10 zPIV</source>
+        <source>10 mBEANS</source>
         <translation>10 MOCHA</translation>
     </message>
     <message>
@@ -5747,8 +5747,8 @@ Are you sure?
         <translation>PIV加注</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV 加注</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS 加注</translation>
     </message>
     <message>
         <source>MOCHA Cold Stake</source>
@@ -5779,24 +5779,24 @@ Are you sure?
         <translation>模糊创建命名</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>转换PIV为zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>转换PIV为mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>已经花费zPIV</translation>
+        <source>Spent mBEANS</source>
+        <translation>已经花费mBEANS</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>从zPIV接收PIV</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>从mBEANS接收PIV</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>铸币的变化，从zPIV花费zPIV</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>铸币的变化，从mBEANS花费mBEANS</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>转换PIV为zPIV</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>转换PIV为mBEANS</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -6119,8 +6119,8 @@ MOCHA核心钱包</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>选择zPIV 花费</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>选择mBEANS 花费</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -6155,8 +6155,8 @@ MOCHA核心钱包</translation>
         <translation>选择／删除所有</translation>
     </message>
     <message>
-        <source>Select zPIV Denominations to Spend</source>
-        <translation>选择zPIV 面额花费</translation>
+        <source>Select mBEANS Denominations to Spend</source>
+        <translation>选择mBEANS 面额花费</translation>
     </message>
 </context>
 <context>
@@ -6218,8 +6218,8 @@ MOCHA核心钱包</translation>
         <translation>启用从特定地址自动生成零币(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>启用每次zPIV生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>启用每次mBEANS生成后触发的自动钱包备份(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable cold staking functionality (0-1, default: %u). Disabled if staking=0</source>
@@ -6230,8 +6230,8 @@ MOCHA核心钱包</translation>
         <translation>启用或禁用PIV输入标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>启用或禁用zPIV输入的标记功能(0-1，默认值:%u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>启用或禁用mBEANS输入的标记功能(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -6610,8 +6610,8 @@ MOCHA核心钱包</translation>
         <translation>启用自动零币铸造(0-1，默认:%u)</translation>
     </message>
     <message>
-        <source>Enable precomputation of zPIV spends and stakes (0-1, default %u)</source>
-        <translation>启用预先计算zPIV的花费和加注(0-1，默认%u)</translation>
+        <source>Enable precomputation of mBEANS spends and stakes (0-1, default %u)</source>
+        <translation>启用预先计算mBEANS的花费和加注(0-1，默认%u)</translation>
     </message>
     <message>
         <source>Enable publish hash transaction (locked via SwiftX) in &lt;address&gt;</source>
@@ -6810,8 +6810,8 @@ MOCHA核心钱包</translation>
         <translation>重新计算ZPIV……</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>重新索引PIV和zPIV货币供应统计数据</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>重新索引PIV和mBEANS货币供应统计数据</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -6890,8 +6890,8 @@ MOCHA核心钱包</translation>
         <translation>自动铸造零币的首选面额(1/5/10/50/100/500/1000/5000)，0为无偏好。默认值: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>指定自定义备份路径，以添加任何自动zPIV备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>指定自定义备份路径，以添加任何自动mBEANS备份的副本。如果将其设置为dir，则每个备份将生成一个时间戳文件。如果设置为文件，将重写到该文件的每次备份。如果还设置了备份文件，则会进行4次备份</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -7326,8 +7326,8 @@ MOCHA核心钱包</translation>
         <translation>正在同步分叉...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>正在同步zPIV钱包……</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>正在同步mBEANS钱包……</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -7442,8 +7442,8 @@ MOCHA核心钱包</translation>
         <translation>JSON-RPC连接的用户名</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>值小于zPIV的最小可用面额(= 1)</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>值小于mBEANS的最小可用面额(= 1)</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

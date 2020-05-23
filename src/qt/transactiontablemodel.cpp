@@ -436,7 +436,7 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::StakeMint:
         return tr("MOCHA Stake");
     case TransactionRecord::StakeZPIV:
-        return tr("zPIV Stake");
+        return tr("mBEANS Stake");
     case TransactionRecord::StakeDelegated:
         return tr("MOCHA Cold Stake");
     case TransactionRecord::StakeHot:
@@ -457,15 +457,15 @@ QString TransactionTableModel::formatTxType(const TransactionRecord* wtx) const
     case TransactionRecord::Obfuscated:
         return tr("Obfuscated");
     case TransactionRecord::ZerocoinMint:
-        return tr("Converted MOCHA to zPIV");
+        return tr("Converted MOCHA to mBEANS");
     case TransactionRecord::ZerocoinSpend:
-        return tr("Spent zPIV");
+        return tr("Spent mBEANS");
     case TransactionRecord::RecvFromZerocoinSpend:
-        return tr("Received MOCHA from zPIV");
+        return tr("Received MOCHA from mBEANS");
     case TransactionRecord::ZerocoinSpend_Change_zPiv:
-        return tr("Minted Change as zPIV from zPIV Spend");
+        return tr("Minted Change as mBEANS from mBEANS Spend");
     case TransactionRecord::ZerocoinSpend_FromMe:
-        return tr("Converted zPIV to MOCHA");
+        return tr("Converted mBEANS to MOCHA");
     default:
         return QString();
     }

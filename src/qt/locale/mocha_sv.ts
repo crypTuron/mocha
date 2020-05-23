@@ -905,8 +905,8 @@ for staking</source>
         <translation>MOCHA</translation>
     </message>
     <message>
-        <source>zPIV</source>
-        <translation>zPIV</translation>
+        <source>mBEANS</source>
+        <translation>mBEANS</translation>
     </message>
     <message>
         <source>Sort by</source>
@@ -937,8 +937,8 @@ for staking</source>
         <translation>Du kan se ditt kontos historik</translation>
     </message>
     <message>
-        <source>Amount of MOCHA and zPIV staked.</source>
-        <translation>Mängden MOCHA och zPIV som präglats.</translation>
+        <source>Amount of MOCHA and mBEANS staked.</source>
+        <translation>Mängden MOCHA och mBEANS som präglats.</translation>
     </message>
     <message>
         <source>All</source>
@@ -977,8 +977,8 @@ for staking</source>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>How to get MOCHA or zPIV</source>
-        <translation>Hur man får MOCHA eller zPIV.</translation>
+        <source>How to get MOCHA or mBEANS</source>
+        <translation>Hur man får MOCHA eller mBEANS.</translation>
     </message>
     <message>
         <source>You can verify the staking activity in the status bar at the top right of the wallet.
@@ -1929,36 +1929,36 @@ https://www.transifex.com/mocha-project/mocha-project-translations</translation>
         <translation>Kartlägg port med &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of MOCHA units to zPIV</source>
-        <translation>Tillåt automatisk prägling med MOCHA enheter till zPIV</translation>
+        <source>Enable automatic minting of MOCHA units to mBEANS</source>
+        <translation>Tillåt automatisk prägling med MOCHA enheter till mBEANS</translation>
     </message>
     <message>
-        <source>Enable zPIV Automint</source>
-        <translation>Tillåt zPIV Autoprägling</translation>
+        <source>Enable mBEANS Automint</source>
+        <translation>Tillåt mBEANS Autoprägling</translation>
     </message>
     <message>
-        <source>Enable automatic zPIV minting from specific addresses</source>
-        <translation>Aktivera automatisk zPIV prägling från specifika adresser</translation>
+        <source>Enable automatic mBEANS minting from specific addresses</source>
+        <translation>Aktivera automatisk mBEANS prägling från specifika adresser</translation>
     </message>
     <message>
         <source>Enable Automint Addresses</source>
         <translation>Aktivera autopräglingsadresser</translation>
     </message>
     <message>
-        <source>Percentage of incoming MOCHA which get automatically converted to zPIV via Zerocoin Protocol (min: 10%)</source>
-        <translation>Procent av inkommande MOCHA som automatiskt konverteras till zPIV via Zerocoin Protokollet (min: 10%)</translation>
+        <source>Percentage of incoming MOCHA which get automatically converted to mBEANS via Zerocoin Protocol (min: 10%)</source>
+        <translation>Procent av inkommande MOCHA som automatiskt konverteras till mBEANS via Zerocoin Protokollet (min: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zPIV</source>
-        <translation>Procent av autopräglade zPIV</translation>
+        <source>Percentage of autominted mBEANS</source>
+        <translation>Procent av autopräglade mBEANS</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough MOCHA for this denomination is available</source>
         <translation>Vänta med automatisk omvandling till Zerocoin tills tillräckligt många MOCHA för denna valör är tillgängliga</translation>
     </message>
     <message>
-        <source>Preferred Automint zPIV Denomination</source>
-        <translation>Preferens på zPIV valör i autoprägling</translation>
+        <source>Preferred Automint mBEANS Denomination</source>
+        <translation>Preferens på mBEANS valör i autoprägling</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2336,14 +2336,14 @@ Adress: %4
         <translation>Prägla</translation>
     </message>
     <message>
-        <source>Minting zPIV anonymizes your MOCHA by removing any
+        <source>Minting mBEANS anonymizes your MOCHA by removing any
 transaction history, making transactions untraceable </source>
-        <translation>Prägling av zPIV anonymiserar dina MOCHA genom att ta bort
+        <translation>Prägling av mBEANS anonymiserar dina MOCHA genom att ta bort
 transaktionshistorik, vilket gör transaktioner ospårbara</translation>
     </message>
     <message>
-        <source>Mint new zPIV or convert back to MOCHA</source>
-        <translation>Prägla nya zPIV eller konvertera tillbaka till MOCHA</translation>
+        <source>Mint new mBEANS or convert back to MOCHA</source>
+        <translation>Prägla nya mBEANS eller konvertera tillbaka till MOCHA</translation>
     </message>
     <message>
         <source>Last Zerocoin Movements</source>
@@ -2354,28 +2354,28 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Inga transaktioner ännu.</translation>
     </message>
     <message>
-        <source>Mint zPIV</source>
-        <translation>Prägla zPIV</translation>
+        <source>Mint mBEANS</source>
+        <translation>Prägla mBEANS</translation>
     </message>
     <message>
-        <source>Enter amount of MOCHA to mint into zPIV</source>
-        <translation>Ange MOCHA beloppet att prägla till zPIV</translation>
+        <source>Enter amount of MOCHA to mint into mBEANS</source>
+        <translation>Ange MOCHA beloppet att prägla till mBEANS</translation>
     </message>
     <message>
         <source>Convert back to MOCHA</source>
         <translation>Konvertera tillbaka till MOCHA</translation>
     </message>
     <message>
-        <source>Enter amount of zPIV to convert back into MOCHA</source>
-        <translation>Ange mängden zPIV som ska konverteras tillbaka till MOCHA</translation>
+        <source>Enter amount of mBEANS to convert back into MOCHA</source>
+        <translation>Ange mängden mBEANS som ska konverteras tillbaka till MOCHA</translation>
     </message>
     <message>
         <source>Zerocoin</source>
         <translation>Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance</source>
-        <translation>zPIV genomgår underhåll</translation>
+        <source>mBEANS is currently undergoing maintenance</source>
+        <translation>mBEANS genomgår underhåll</translation>
     </message>
     <message>
         <source>convert</source>
@@ -2727,8 +2727,8 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Vanlig Backup Sökväg:</translation>
     </message>
     <message>
-        <source>Custom zPIV Backup Path:</source>
-        <translation>Vanlig zPIV Backup Sökväg:</translation>
+        <source>Custom mBEANS Backup Path:</source>
+        <translation>Vanlig mBEANS Backup Sökväg:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3103,12 +3103,12 @@ transaktionshistorik, vilket gör transaktioner ospårbara</translation>
         <translation>Spendera Zerocoin</translation>
     </message>
     <message>
-        <source>zPIV is currently undergoing maintenance.</source>
-        <translation>zPIV genomgår för tillfället underhåll.</translation>
+        <source>mBEANS is currently undergoing maintenance.</source>
+        <translation>mBEANS genomgår för tillfället underhåll.</translation>
     </message>
     <message>
-        <source>Version 1 zPIV require a security level of 100 to successfully spend.</source>
-        <translation>Version 1 zPIV kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
+        <source>Version 1 mBEANS require a security level of 100 to successfully spend.</source>
+        <translation>Version 1 mBEANS kräver en säkerhetsnivå på 100 för att kunna spenderas med framgång.</translation>
     </message>
     <message>
         <source>Too much inputs (</source>
@@ -4003,8 +4003,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>MOCHA staking</translation>
     </message>
     <message>
-        <source>zPIV Stake</source>
-        <translation>zPIV Staking</translation>
+        <source>mBEANS Stake</source>
+        <translation>mBEANS Staking</translation>
     </message>
     <message>
         <source>Obfuscation Denominate</source>
@@ -4023,24 +4023,24 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Obfuscation Skapa tecken</translation>
     </message>
     <message>
-        <source>Converted MOCHA to zPIV</source>
-        <translation>Konvertera MOCHA till zPIV</translation>
+        <source>Converted MOCHA to mBEANS</source>
+        <translation>Konvertera MOCHA till mBEANS</translation>
     </message>
     <message>
-        <source>Spent zPIV</source>
-        <translation>Spendera zPIV</translation>
+        <source>Spent mBEANS</source>
+        <translation>Spendera mBEANS</translation>
     </message>
     <message>
-        <source>Received MOCHA from zPIV</source>
-        <translation>Mottog MOCHA från zPIV</translation>
+        <source>Received MOCHA from mBEANS</source>
+        <translation>Mottog MOCHA från mBEANS</translation>
     </message>
     <message>
-        <source>Minted Change as zPIV from zPIV Spend</source>
-        <translation>Myntad Växel som zPIV från zPIV Spendering</translation>
+        <source>Minted Change as mBEANS from mBEANS Spend</source>
+        <translation>Myntad Växel som mBEANS från mBEANS Spendering</translation>
     </message>
     <message>
-        <source>Converted zPIV to MOCHA</source>
-        <translation>Konverterad zPIV till MOCHA</translation>
+        <source>Converted mBEANS to MOCHA</source>
+        <translation>Konverterad mBEANS till MOCHA</translation>
     </message>
     <message>
         <source>Sent to</source>
@@ -4221,8 +4221,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
 <context>
     <name>ZPivControlDialog</name>
     <message>
-        <source>Select zPIV to Spend</source>
-        <translation>Välj zPIV att Spendera</translation>
+        <source>Select mBEANS to Spend</source>
+        <translation>Välj mBEANS att Spendera</translation>
     </message>
     <message>
         <source>Coin Control</source>
@@ -4304,16 +4304,16 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Distribuerad under MIT mjukvarulicensen, se medföljande fil COPYING eller &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
     <message>
-        <source>Enable automatic wallet backups triggered after each zPIV minting (0-1, default: %u)</source>
-        <translation>Aktivera automatisk plånboksbackup efter varje zPIV minting (0-1, standard: %u)</translation>
+        <source>Enable automatic wallet backups triggered after each mBEANS minting (0-1, default: %u)</source>
+        <translation>Aktivera automatisk plånboksbackup efter varje mBEANS minting (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable or disable staking functionality for MOCHA inputs (0-1, default: %u)</source>
         <translation>Aktivera eller avaktivera staking funktionalitet för MOCHA inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
-        <source>Enable or disable staking functionality for zPIV inputs (0-1, default: %u)</source>
-        <translation>Aktivera eller avaktivera staking funktionalitet för zPIV inmatningar (0-1, standard: %u)</translation>
+        <source>Enable or disable staking functionality for mBEANS inputs (0-1, default: %u)</source>
+        <translation>Aktivera eller avaktivera staking funktionalitet för mBEANS inmatningar (0-1, standard: %u)</translation>
     </message>
     <message>
         <source>Enable spork administration functionality with the appropriate private key.</source>
@@ -4844,8 +4844,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Procent automatiskt mintad Zerocoin (1-100, default: %u)</translation>
     </message>
     <message>
-        <source>Reindex the MOCHA and zPIV money supply statistics</source>
-        <translation>Indexera MOCHA och zPIV pengarna tillgång statistik på nytt</translation>
+        <source>Reindex the MOCHA and mBEANS money supply statistics</source>
+        <translation>Indexera MOCHA och mBEANS pengarna tillgång statistik på nytt</translation>
     </message>
     <message>
         <source>Reindexing zerocoin database...</source>
@@ -4924,8 +4924,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Valör aatt föredra för automatiskt mintad Zerocoin (1/5/10/50/100/500/1000/5000), 0 för ingen preface. standard: %u)</translation>
     </message>
     <message>
-        <source>Specify custom backup path to add a copy of any automatic zPIV backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
-        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk zPIV backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
+        <source>Specify custom backup path to add a copy of any automatic mBEANS backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup. If backuppath is set as well, 4 backups will happen</source>
+        <translation>Specifiera skräddarsydd backup väg att lägga till en kopia av alla automatisk mBEANS backup. Om satt som dir, varje backup genererar en tidsstämplad fil. Om satt som fil, skriver över den filen vid varje backup. Om backupvägen också är satt, 4 backups kommer hända</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
@@ -5332,8 +5332,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Synkroniserar sporks...</translation>
     </message>
     <message>
-        <source>Syncing zPIV wallet...</source>
-        <translation>Synkroniserar zPIV plånbok...</translation>
+        <source>Syncing mBEANS wallet...</source>
+        <translation>Synkroniserar mBEANS plånbok...</translation>
     </message>
     <message>
         <source>The coin spend has been used</source>
@@ -5444,8 +5444,8 @@ Var vänlig kontrollera adressen och försök igen.</translation>
         <translation>Användarnamn för JSON-RPC anslutningar</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zPIV</source>
-        <translation>Värde är under den minsta tillgängliga valören (=1) av zPIV</translation>
+        <source>Value is below the smallest available denomination (= 1) of mBEANS</source>
+        <translation>Värde är under den minsta tillgängliga valören (=1) av mBEANS</translation>
     </message>
     <message>
         <source>Verifying blocks...</source>

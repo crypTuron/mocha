@@ -73,11 +73,11 @@ New Consensus Rules
 
 The following consensus rule changes will be enforced on or shortly after block `2153200`. Note that **Upgrade Enforcement** (mentioned above) will occur prior to this block height.
 
-### V1 zPIV Spending (Public Spends Version 4)
+### V1 mBEANS Spending (Public Spends Version 4)
 
-Since the discovery of a critical exploit within the libzerocoin library in early 2019, remaining legacy v1 zPIV have been un-spendable. We're happy to say that, once the new consensus rules are in effect, users will once again be able to spend their v1 zPIV with public spends version 4 ([PR #936](https://github.com/MOCHA-Project/MOCHA/pull/936)).
+Since the discovery of a critical exploit within the libzerocoin library in early 2019, remaining legacy v1 mBEANS have been un-spendable. We're happy to say that, once the new consensus rules are in effect, users will once again be able to spend their v1 mBEANS with public spends version 4 ([PR #936](https://github.com/MOCHA-Project/MOCHA/pull/936)).
 
-As with the previous version 3 public spends introduced in core wallet version 3.3.0 (enabling the spending of v2 zPIV), version 4 spends will also be public. A full technical writeup is available on the [MOCHA Wiki](https://github.com/MOCHA-Project/MOCHA/wiki/CoinRandomnessSchnorrSignature).
+As with the previous version 3 public spends introduced in core wallet version 3.3.0 (enabling the spending of v2 mBEANS), version 4 spends will also be public. A full technical writeup is available on the [MOCHA Wiki](https://github.com/MOCHA-Project/MOCHA/wiki/CoinRandomnessSchnorrSignature).
 
 ### OP_CHECKCOLDSTAKEVERIFY and P2CS
 
