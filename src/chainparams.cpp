@@ -261,7 +261,7 @@ public:
         printf("Mainnet block.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         }
         assert(hashGenesisBlock == uint256("0x"));
-        assert(genesis.hashMerkleRoot == uint256("0x"));
+        assert(genesis.hashMerkleRoot == uint256("0x82c119eb11fec2c5e71c06adc6f0b012350f2f10a4b82812351b4a9fcfc65aea"));
 
         vSeeds.clear();
         
