@@ -175,7 +175,7 @@ public:
         nMinColdStakingAmount = 5 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 20; // Mine out 20 blocks to get a stable initial chain 
+        nLastPOWBlock = 30; // Mine out 20 + 10 blocks to get a stable initial chain (10 for mn confirms)
         
         
         nMochaBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
