@@ -175,7 +175,7 @@ public:
         nMinColdStakingAmount = 5 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 30; // Mine out 20 + 10 blocks to get a stable initial chain (10 for mn confirms)
+        nLastPOWBlock = 1000; // All blocks except the genesis yield no reward for the first 1k blocks - MOCHA
         
         
         nMochaBadBlockTime = 1471401614; // Skip nBit validation of Block 259201 per PR #915
