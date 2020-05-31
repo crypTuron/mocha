@@ -2011,7 +2011,11 @@ int64_t GetBlockValue(int nHeight)
     if (nHeight <= Params().LAST_POW_BLOCK() && nHeight == 0) {
         nSubsidy = 1296700 * COIN;
     } else {
-        nSubsidy = 5 * COIN;
+        if (nHeight <= Params().LAST_POW_BLOCK() && nHeight < 1000) {
+           nSubsidy = 0 * COIN; // MOCHA - Make first thousand blocks for confirmations only - no rewards attached
+        }else {
+            nSubsidy = 5 * COIN; // Otherwise just return a 5 MOCHA reward
+        }
     }
     return nSubsidy;
 }
